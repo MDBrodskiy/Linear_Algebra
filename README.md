@@ -1,5 +1,5 @@
 # Linear Algebra
-An assortment of lecture notes and exams from DVC's Math-292 (Spring 2021)
+An assortment of lecture notes and exams from DVC's Math-194 (Spring 2021)
 <br/> <br/> 
 Open sourced **LaTeX** Templates [here](https://www.latextemplates.com/).
 <br/>
