@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Systems of Linear Equations}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Linear Equation:
+
+    \begin{enumerate}
+
+      \item One Unknowns: $3x=5$
+
+      \item Two Unknowns: $ax+by=5$
+
+      \item Three Unknowns: $ax+by+cz=5$
+
+      \item $n$ Unknowns: $a_0+a_1x_1+a_2x_2+\dots+a_nx_n=0$
+
+    \end{enumerate}
+
+  \item Solution Set:
+
+    \begin{enumerate}
+
+      \item With two unknowns, given $a\neq0$ and $b\neq0$: $S=\{(x,y)|ax+by=c\}$
+
+      \item Empty Set: $a=0,\,b=0,\,c\neq0$
+
+      \item Whole $xy$ plane: $a=0,\,b=0,\,c=0$
+
+    \end{enumerate}
+
+  \item Systems of Linear Equations:
+
+    \begin{enumerate}
+
+      \item Example of a system: $\begin{array}{l l} x-2y=7 & (E_1) \\ 3x+y=7 & (E_2) \end{array}$
+
+      \item Solved with elimination or back substitution
+
+      \item For the given example: $S=\{(3,-2)\}$
+
+    \end{enumerate}
+
+  \item Operations on Equations:
+
+    \begin{enumerate}
+
+      \item Two Equations are Interchanged
+
+      \item Multiply and Equation by a non-zero Constant
+
+      \item A Constant Multiple of one Equation can be Added to Another
+
+    \end{enumerate}
+
+  \item Types of Solutions:
+
+    \begin{enumerate}
+
+      \item Consistent System $-$ One Unique (!) Solution
+
+      \item Inconsistent System $-$ No Solutions (\o)
+
+      \item Dependent System $-$ Infinitely Many Solutions
+
+    \end{enumerate}
+
+  \item Example: $\begin{array}{l l} 3x+y=7 & (E_1) \\ 2y=14-6x & (E_2)  \end{array}$
+
+    \begin{enumerate}
+
+      \item Dependent System $-$ Set Up A Parameter
+
+      \item Let $x=t$, then $y=7-3t$. This means the set is $S=\{(t,7-3t)\,|\,t\in\mathbb{R}\}$
+
+    \end{enumerate}
+
+  \item Systems of Linear Equations with 3 Unknowns
+
+    \begin{enumerate}
+
+      \item $a_1x_1 + a_2x_2 + a_3x_3 =d$ (plane)
+
+      \item Types of Solutions:
+
+        \begin{enumerate}
+
+          \item Ordered Triple (Point) $-$ Consistent
+
+          \item Empty Set (\o) $-$ Inconsistent
+
+          \item Same Plane $-$ Dependent
+
+          \item Line of Intersection $-$ Consistent
+
+        \end{enumerate}
+
+      \item Example: $\begin{array}{l l} 5x+4y-2z=9 & (E_1) \\ 5x+5y+z=16 & (E_2) \\ 5x+4y-z=10 & (E_3) \end{array}$
+
+        \begin{equation*}
+          \begin{split}
+            E_1-E_2\Longrightarrow-y-3z=-7\,(E_4)\\
+            E_1-E_3\Longrightarrow z=1\\
+            E_4(y,1)\Longrightarrow y=4\\
+            E_1(x,4,1)\Longrightarrow 5x+16-2=9\\
+            5x=-5\Longrightarrow x=-1\\
+            S=\left\{ (-1,4,1) \right\}
+          \end{split}
+          \label{1}
+        \end{equation}
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
