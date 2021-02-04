@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Operations on Matrices}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Matrix $-$ An ordered array of numbers
+
+    \begin{enumerate}
+
+      \item Dimensions (size) $-$ Expressed as row by column ($r \text{ x } c$)
+
+      \item Addition $-$ Let $A=[a_{ij}]$ and $B=[b_{ij}]$, then $A+B=[a_{ij}+b_{ij}]$, assuming the matrix dimensions are equal
+
+      \item Scalar Multiplication $-$ Let $c$ be a constant and $A=[a_{ij}]$. Then $cA=[ca_{ij}]$
+
+      \item Zero Matrix $-$ Ex. $\left[\begin{array}{l l} 0 & 0 \\ 0 & 0 \\ 0 & 0 \\ 0 & 0 \\ \end{array}\right]$
+
+      \item Equality $-$ Let $A=[a_{ij}]$ and $B=[b_{ij}]$. $A=B$ iff $a_{ij}=b_{ij}$
+
+      \item Matrix Multiplication
+
+        \begin{enumerate}
+
+          \item Dot Product $-$ Given two matrices, $A=\left[\begin{array}{l l l l} a_1 & a_2 & \dots & a_n \end{array}\right]$ and $B=\left[ \begin{array}{l} a_1 \\ a_2 \\ \vdots \\ a_n \end{array}\right]$, the product is $a_1b_1+a_2b_2+\dots+a_nb_n$. This can only be done if the dimensions of $A$ are $m\text{ x }n$ and the dimensions of $B$ are $n\text{ x }m$.
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Diagonal Matrix: $A=\left[ \begin{array}{l l l l} a_{11} & 0 & 0 & 0 \\ 0 & a_{22} & 0 & 0 \\ \vdots & \vdots & \vdots & \vdots \\ 0 & 0 & 0 & a_{nn} \end{array}\right]$. Must be a square matrix.
+
+  \item Traces of a matrix are the sums of the main diagonal components
+
+\end{itemize}
+
+\end{document}
+

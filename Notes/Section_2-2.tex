@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Properties of Matrix Operations}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Let $\bold{A}$, $\bold{B}$, and $\bold{C}$ be matrices and $c$ and $d$ be constants
+
+    \begin{enumerate}
+
+      \item $\bold{A}+\bold{B}=\bold{B}+\bold{A}$
+
+      \item $\bold{A}+(\bold{B}+\bold{C})=(\bold{A}+\bold{B})+\bold{C}$
+
+      \item $(cd)\bold{A}=c(d\bold{A})$
+
+      \item $1\bold{A}=\bold{A}$
+
+      \item $(c+d)\bold{A}=c\bold{A}+d\bold{A}$
+
+      \item $c(\bold{A}+\bold{B})=c\bold{A}+c\bold{B}$
+
+    \end{enumerate}
+
+  \item Let $\bold{A}$ be a matrix, $c$ be a constant, and $\bold{O}_{mn}$ be a zero matrix
+
+    \begin{enumerate}
+
+      \item $\bold{A}+\bold{O}_{mn}=\bold{A}$
+
+      \item $\bold{A} + (-\bold{A})=\bold{O}_{mn}$
+
+      \item If $c\bold{A}=\bold{O}_{mn}$, then $c=0$ or $\bold{A}=\bold{O}_{mn}$
+
+    \end{enumerate}
+
+  \item Let $\bold{A}$, $\bold{B}$, and $\bold{C}$ be matrices, and $c$ be a constant
+
+    \begin{enumerate}
+
+      \item $\bold{A}(\bold{BC})=(\bold{AB})\bold{C}$
+
+      \item $\bold{A}(\bold{B}+\bold{C})=\bold{AB}+\bold{AC}$
+
+      \item $(\bold{A}+\bold{B})\bold{C}=\bold{AC}+\bold{BC}$
+
+      \item $c(\bold{AB})=(c\bold{A})\bold{B}=\bold{A}(c\bold{B})$
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
