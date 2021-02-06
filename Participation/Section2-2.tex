@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 2.2 Participation Problem}
+\date{February 10, 2021}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\flushleft Solve for $a$, $b$, $c$, and $d$ in the following matrix equation:
+
+\begin{equation*}
+  \left[\begin{array}{l l}
+    a & b \\
+    c & d\\
+\end{array}\right]
+  \left[\begin{array}{l l}
+    2 & 1 \\
+    3 & 1\\
+\end{array}\right]=
+  \left[\begin{array}{l l}
+    3 & 17 \\
+    4 & -1\\
+\end{array}\right]
+  \label{1}
+\end{equation}
+
+\begin{center}
+  \begin{array}{l l}
+    2a+3b=3 & a+b=17\\
+    2c+3d=4 & c+d=-1
+  \end{array}
+\end{center}
+
+\begin{equation}
+  \begin{split}
+  \left[\begin{array}{c c c c | c}
+      2 & 3 & 0 & 0 & 3\\
+      1 & 1 & 0 & 0 & 17\\
+      0 & 0 & 2 & 3 & 4\\
+      0 & 0 & 1 & 1 & -1\\
+  \end{array}\right]\\
+  R_1-R_2\rightarrow R_1\text{ and }R_3-R_4\rightarrow R_3\\
+  \left[\begin{array}{c c c c | c}
+      1 & 2 & 0 & 0 & -14\\
+      1 & 1 & 0 & 0 & 17\\
+      0 & 0 & 1 & 2 & 5\\
+      0 & 0 & 1 & 1 & -1\\
+  \end{array}\right]\\
+  R_1-R_2\rightarrow R_2\text{ and }R_3-R_4\rightarrow R_4\\
+  \left[\begin{array}{c c c c | c}
+      1 & 2 & 0 & 0 & -14\\
+      0 & 1 & 0 & 0 & -31\\
+      0 & 0 & 1 & 2 & 5\\
+      0 & 0 & 0 & 1 & 6\\
+  \end{array}\right]\\
+\end{split}
+  \label{2}
+\end{equation}
+
+\begin{center}
+  \begin{array}{l}
+    a+2b=-14\\
+    b=-31\\
+    c+2d=5\\
+    d=6\\
+    a=48\\
+    c=-7
+  \end{array}
+\end{center}
+
+\end{document}
+
