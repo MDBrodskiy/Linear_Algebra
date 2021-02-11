@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Inverse of a Square Matrix}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item $\bold{A}\cdot\bold{A}^{-1}=\bold{I}$
+
+  \item If a two by two matrix is given, and the entries are $\bold{A}=\left[ \begin{array}{l l} a & b\\ c & d\\ \end{array} \right]$, then the inverse is $\bold{A}^{-1}=\frac{1}{ad-bc}\left[ \begin{array}{c c} d & -b\\ -c & a\\ \end{array} \right]$
+
+  \item Some matrices may be non-invertible (proven if a row of zeros is obtained)
+
+  \item $(\bold{AB})^{-1}=\bold{B}^{-1}\bold{A}^{-1}$
+
+  \item $(\bold{A}^{-1})^{-1}=\bold{A}$
+
+  \item $(\bold{A}^{k})^{-1}=\bold{A}^{-1}\cdot\bold{A}^{-1}\cdot\bold{A}^{-1}\dots=(\bold{A}^{-1})^k$
+
+  \item $(c\bold{A})^{-1}=\frac{1}{c}\bold{A}^{-1}$
+
+  \item $(\bold{A}^T)^{-1}=(\bold{A}^{-1})^T$
+
+\end{itemize}
+
+\end{document}
+

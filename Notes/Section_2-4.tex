@@ -1,0 +1,92 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Elementary Matrices and Row Equivalence}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item To interchange $R_1$ and $R_2$, one could use the matrix $\begin{bmatrix} 0 & 1 & 0\\ 1 & 0 & 0 \\ 0 & 0 & 1\\  \end{bmatrix}$. This is called an elementary matrix, which is obtained with exactly one operation on $\bold{I}$
+
+  \item To multiply $R_1$ by 2, one could use the matrix $\begin{bmatrix} 2 & 0 & 0\\ 0 & 1 & 0 \\ 0 & 0 & 1\\  \end{bmatrix}$.
+    
+  \item To make $R_2$ equal to $R_2-2R_1$, one could use the matrix $\begin{bmatrix} 1 & 0 & 0\\ -2 & 1 & 0 \\ 0 & 0 & 1\\  \end{bmatrix}$.
+
+  \item The inverse of an elementary matrix reverses its operation (for example, if $\bold{E}_1$ subtracts $R_2$ from $R_1$, then $\bold{E}_1^{-1}$ adds $R_2$ to $R_1$)
+
+  \item Fundamental Theorem for Matrices:
+
+    \begin{enumerate}
+
+      \item If $\bold{A}$ is a square matrix of order $n$, then all of the following conditions are equivalent:
+
+        \begin{enumerate}
+
+          \item $\bold{A}$ is invertible
+
+          \item $\bold{A}x=\bold{B}$ has a unique solution for any $n$ by one column matrix $\bold{B}$
+
+          \item Only solution of $\bold{A}x=0$ is the trivial solution $x=0$
+
+          \item $\bold{A}\widetilde{R}\bold{I}$
+
+          \item $\bold{A}$ can be written as the product of elementary matrices
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
