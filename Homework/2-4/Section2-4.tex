@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 2.4 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+  \item The matrix is elementary, $2R_2\widetilde{\rightarrow}R_2$
+
+    \setcounter{enumi}{2}
+
+  \item The matrix is elementary, $2R_1+R_2\widetilde{\rightarrow}R_2$
+
+    \setcounter{enumi}{4}
+
+  \item The matrix is not elementary 
+
+    \setcounter{enumi}{6}
+
+  \item The matrix is elementary, $R_3-5R_2\widetilde{\rightarrow}R_3$
+
+    \setcounter{enumi}{8}
+
+  \item $E=\left[ \begin{array}{c c c} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0 \end{array} \right]$
+
+    \setcounter{enumi}{10}
+
+  \item $E=\left[ \begin{array}{c c c} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0 \end{array} \right]$
+
+    \setcounter{enumi}{14}
+
+  \item $E_1=\left[ \begin{array}{c c c} 1 & 0 & 0 \\ 0 & 1 & 0\\ 6 & 0 & 1 \end{array} \right],\text{ }E_2=\left[ \begin{array}{c c c} 1 & 0 & 0 \\ 0 & 1 & 0\\ 0 & 0 & \frac{1}{2} \end{array} \right],\text{ }E_3=\left[ \begin{array}{c c c} 1 & 0 & 0 \\ 0 & \frac{1}{4} & 0\\ 0 & 0 & 1 \end{array} \right]$
+
+    \begin{equation*}
+      E_3E_2E_1\bold{A}=\left[ \begin{array}{c c c c} 1 & -2 & -1 & 0\\ 0 & 1 & 2 & -1\\  0 & 0 & 1 & \frac{1}{2}  \end{array} \right]
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{16}
+
+  \item $E_1=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0  \\ 0 & 0 & 1 & 1\end{array} \right]\\
+    E_2=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & -3 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_3=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & 4 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_4=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 2 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_5=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 3 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_6=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & -\frac{1}{10} & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_7=\left[ \begin{array}{c c c c} 2 & 0 & 0 & 0\\ 0 & 1 & 6 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_8=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & \frac{1}{2} & 0 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_9=\left[ \begin{array}{c c c c} 1 & -1 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_{10}=\left[ \begin{array}{c c c c} -\frac{1}{2} & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1\end{array} \right]\\
+    E_{11}=\left[ \begin{array}{c c c c} 1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & -1 & 1\end{array} \right]$
+
+    \begin{equation*}
+      E_{11}E_{10}E_9E_8E_7E_6E_5E_4E_3E_2E_1\bold{A}=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ 0 & 0 & 0  \end{array}  \right]
+      \label{2}
+    \end{equation}
+
+    \setcounter{enumi}{18}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \frac{1}{0-1}\left[ \begin{array}{c c} 0 & -1\\ -1 & 0 \end{array} \right]\\
+        \bold{A}^{-1}=\left[ \begin{array}{c c} 0 & 1\\ 1 & 0\\ \end{array}  \right]
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \setcounter{enumi}{20}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \left(\left[ \begin{array}{c c c} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0 \end{array} \right]\right)^{-1}=\left[ \begin{array}{c c c} 0 & 0 & 1^{-1}\\ 0 & 1^{-1} & 0\\ 1^{-1} & 0 & 0 \end{array} \right]\\
+        \bold{A}^{-1}=\left[ \begin{array}{c c c} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0 \end{array} \right]
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \setcounter{enumi}{22}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \left(\left[ \begin{array}{c c c} k & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right]\right)^{-1}=\left[ \begin{array}{c c c} k^{-1} & 0 & 0\\ 0 & 1^{-1} & 0\\ 0 & 0 & 1^{-1} \end{array} \right]\\
+        \bold{A}^{-1}=\left[ \begin{array}{c c c} \frac{1}{k} & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right],\,\,k\neq0
+      \end{split}
+      \label{5}
+    \end{equation}
+
+    \setcounter{enumi}{24}
+
+  \item $E_1=\left[ \begin{array}{c c} 0 & 1\\ 0 & 1 \end{array} \right]\\
+    E_2=\left[ \begin{array}{c c} 1 & 0\\ 1 & 0 \end{array} \right]\\
+    E_3=\left[ \begin{array}{c c} 1 & 0\\ -3 & 1 \end{array} \right]\\
+    E_4=\left[ \begin{array}{c c} 1 & 0\\ 0 & -\frac{1}{2} \end{array} \right]\\$
+
+
+    \begin{equation*}
+      \begin{split}
+        E_4E_3E_2E_1\bold{A}=\left[ \begin{array}{c c} 1 & 0\\ 0 & 1 \end{array}\right]\\
+        E_4E_3E_2E_1=\left[ \begin{array}{c c} 0 & 1\\ -\frac{1}{2} & \frac{3}{2}  \end{array} \right]\\
+        \therefore E_4E_3E_2E_1=\bold{A}^{-1}\\
+      \end{split}
+      \label{6}
+    \end{equation}
+
+    \setcounter{enumi}{26}
+
+  \item $E_1=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & \frac{1}{4} \end{array} \right]\\
+        E_2=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 1\\ 0 & 0 & 1 \end{array} \right]\\
+        E_3=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & \frac{1}{6} & 0\\ 0 & 0 & 1 \end{array} \right]\\
+        E_4=\left[ \begin{array}{c c c} 1 & 0 & 1\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array} \right]\\$
+
+    \begin{equation*}
+      \begin{split}
+        E_4E_3E_2E_1\bold{A}=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1 \end{array}\right]\\
+        E_4E_3E_2E_1=\left[ \begin{array}{c c c} 1 & 0 & \frac{1}{4}\\ 0 & \frac{1}{6} & \frac{1}{24}\\ 0 & 0 & \frac{1}{4}  \end{array}\right]\\
+        \therefore E_4E_3E_2E_1=\bold{A}^{-1}\\
+      \end{split}
+      \label{7}
+    \end{equation}
+
+    \setcounter{enumi}{30}
+
+  \item $E_1=\left[ \begin{array}{c c} 1 & 0\\ 0 & 1 \end{array} \right]\\
+    E_2=\left[ \begin{array}{c c} 1 & 0\\ 0 & -1 \end{array} \right]\\$
+    E_3=\left[ \begin{array}{c c} 1 & 0\\ 3 & 1 \end{array} \right]\\
+    E_4=\left[ \begin{array}{c c} 1 & 1\\ 0 & 1 \end{array} \right]\\
+
+    \begin{equation*}
+      \begin{split}
+        E_4E_3E_2E_1=\left[ \begin{array}{c c} 4 & -1\\ 3 & -1 \end{array}\right]\\
+      \end{split}
+      \label{8}
+    \end{equation}
+
+    \setcounter{enumi}{32}
+
+  \item $E_1=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ \end{array} \right]\\
+        E_2=\left[ \begin{array}{c c c} 1 & -2 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ \end{array} \right]\\
+        E_3=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & -1 & 0\\ 0 & 0 & 1\\ \end{array} \right]\\
+        E_4=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 1 & 1 & 0\\ 0 & 0 & 1\\ \end{array} \right]\\
+        E_5=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & -1 & 0\\ 0 & 0 & 1\\ \end{array} \right]\\
+        $
+
+    \begin{equation*}
+      \begin{split}
+        E_5E_4E_3E_2E_1=\left[ \begin{array}{c c c} 1 & -2 & 0\\ -1 & 3 & 0\\ 0 & 0 & 1 \end{array}\right]\\
+      \end{split}
+      \label{9}
+    \end{equation}
+
+    \setcounter{enumi}{36}
+
+  \item It is \textbf{NOT} always elementary. This is evident because elementary matrices may be used to come up with non-elementary matrices, such as inverses, which means that the product is not always elementary.
+
+    \setcounter{enumi}{39}
+
+  \item 
+    
+    \begin{equation*}
+      \begin{split}
+        \bold{A}=\left[ \begin{array}{c c c} 1+ab & a & 0\\ b & 1 & 0\\ 0 & 0 & c  \end{array} \right]\\
+        E_1=\left[ \begin{array}{c c c} 1 & -a & 0\\ 0 & 1 & 0\\ 0 & 0 & 1  \end{array} \right]\\
+        E_2=\left[ \begin{array}{c c c} 1 & 0 & 0\\ -b & 1 & 0\\ 0 & 0 & 1  \end{array} \right]\\
+        E_3=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & \frac{1}{c}  \end{array} \right]\\
+        E_3E_2E_1=\left[ \begin{array}{c c c} 1 & -a & 0\\ -b & ab+1 & 0\\ 0 & 0 & \frac{1}{c}  \end{array} \right]\\
+        E_3E_2E_1\bold{A}=\left[ \begin{array}{c c c} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\\ \end{array}\right]
+      \end{split}
+      \label{10}
+    \end{equation}
+
+  \item
+
+    \begin{enumerate}
+
+      \item True. It has one or less modifications done to it, with respect to the identity matrix.
+
+      \item False. This modification can possibly affect more than one number, which would mean there is more than one modification done, which means it is no longer an elementary matrix.
+
+      \item True. An inversed elementary matrix produces a matrix with one or less modification, meaning that it is an elementary matrix itself.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
