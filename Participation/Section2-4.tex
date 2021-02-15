@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 2.4 Participation Problem}
+\date{February 17, 2021}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}[label=\alph*)]
+
+  \item Write $\bold{A}=\left[ \begin{array}{c c} 4 & 5\\ 1 & 2 \end{array}\right]$ as a product of elementary matrices
+
+    \begin{equation*}
+      \begin{split}
+        E_1=\left[ \begin{array}{c c} 1 & 0\\ 0 & 1  \end{array} \right]\\
+        E_2=\left[ \begin{array}{c c} 1 & 1\\ 0 & 1  \end{array} \right]\\
+        E_3=\left[ \begin{array}{c c} 1 & 0\\ 1 & 1  \end{array} \right]\\
+        E_4=\left[ \begin{array}{c c} 3 & 0\\ 0 & 1  \end{array} \right]\\
+        E_5=\left[ \begin{array}{c c} 1 & 1\\ 0 & 1  \end{array} \right]\\
+        E_5E_4E_3E_2E_1=\left[ \begin{array}{c c} 4 & 5\\ 1 & 2\\ \end{array} \right]
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item Write $\bold{A}^{-1}$ as a product of elementary matrices
+
+    \begin{equation*}
+      \begin{split}
+        \bold{A}=\left[ \begin{array}{c c} 4 & 5\\ 1 & 2\\ \end{array}\right]\\
+        E_1=\left[ \begin{array}{c c} 1 & -1\\ 0 & 1  \end{array} \right]\\
+        E_2=\left[ \begin{array}{c c} \frac{1}{3} & 0\\ 0 & 1  \end{array} \right]\\
+        E_3=\left[ \begin{array}{c c} 1 & 0\\ -1 & 1  \end{array} \right]\\
+        E_4=\left[ \begin{array}{c c} 1 & -1\\ 0 & 1  \end{array} \right]\\
+        E_4E_3E_2E_1=\left[ \begin{array}{c c} \frac{2}{3} & -\frac{5}{3}\\ -\frac{1}{3} & \frac{4}{3}  \end{array} \right]\\
+        E_4E_3E_2E_1\bold{A}=\left[ \begin{array}{c c} 1 & 0\\ 0 & 1\\ \end{array} \right]\\
+        \therefore E_4E_3E_2E_1 = \bold{A}^{-1}
+      \end{split}
+      \label{2}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
