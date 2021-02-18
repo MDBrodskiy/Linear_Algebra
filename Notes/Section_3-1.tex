@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{The Determinant}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Determinants may be found for square matrices only
+
+  \item For a 2x2 matrix:
+
+    \begin{enumerate}
+
+      \item det($\bold{A}$)=det$\left(\begin{vmatrix} a_{11} & a_{12}\\ a_{21} & a_{22}  \end{vmatrix}\right)$=$a_{11}a_{22}-a_{12}a_{21}$
+
+    \end{enumerate}
+
+  \item Minors and Cofactors:
+
+    \begin{enumerate}
+
+      \item Let $\bold{A}$ be a square matrix
+
+        \begin{enumerate}
+
+          \item Minor $-$ $M_{ij}$ of element $a_{ij}$ is the determinant of the submatrix formed by eliminating row $i$ and column $j$ of matrix $\bold{A}$
+
+          \item Ex. $\bold{A}=\left[ \begin{array}{c c c} 1 & 4 & -2\\ 3 & 2 & 0\\ -1 & 4 & 3\\ \end{array}\right]$, then $M_{23}=\begin{vmatrix} 1 & 4\\ -1 & 4 \end{vmatrix}=8$
+
+        \end{enumerate} 
+
+        \begin{enumerate}
+
+      \item Cofactor $-$ $C_{ij}$ of entry $a_{ij}=(-1)^{i+j}M_{ij}$
+
+      \item Ex. $\bold{A}=\left[ \begin{array}{c c c} 1 & 4 & -2\\ 3 & 2 & 0\\ -1 & 4 & 3\\ \end{array}\right]$, then $C_{23}=(-1)^{2+3}\begin{vmatrix} 1 & 4\\ -1 & 4 \end{vmatrix}=-8$
+
+    \end{enumerate}
+
+    \end{enumerate}
+
+  \item For an nxn matrix
+
+    \begin{enumerate}
+
+      \item Expand about $r_i$
+
+        \begin{equation}
+          \begin{split}
+          \text{det}(\bold{A})&=a_{i1}C_{i1}+a_{i2}C_{i2}+\dots+a_{in}C_{in}\\
+          &= \sum_{n=1}^c a_{in}C_{in}
+        \end{split}
+          \label{1}
+        \end{equation}
+
+      \item Expand about column $j$
+
+        \begin{equation}
+          \begin{split}
+          \text{det}(\bold{A})&=a_{1j}C_{1j}+a_{2j}C_{2j}+\dots+a_{nj}C_{nj}\\
+          &= \sum_{n=1}^c a_{nj}C_{nj}
+        \end{split}
+          \label{2}
+        \end{equation}
+
+    \end{enumerate}
+
+  \item Upper Triangular Matrix $-$ $\left[ \begin{array}{c c c} a_{11} & a_{12} & a_{13} \\ 0 & a_{22} & a_{23}\\ 0 & 0 & a_{33}  \end{array} \right]$
+
+  \item Lower Triangular Matrix $-$ $\left[ \begin{array}{c c c} a_{11} & 0 & 0\\ a_{21} & a_{22} & 0\\ a_{31} & a_{32} & a_{33}  \end{array} \right]$ 
+
+  \item If $\bold{A}$ is a triangular matrix, its determinant is det($\bold{A}$)=$a_{11}a_{22}\dots a_{nn}$
+
+\end{itemize}
+
+\end{document}
+

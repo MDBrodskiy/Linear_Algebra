@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Determinants \& Elementary Row Operations}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Let $\bold{A}$ and $\bold{B}$ be square matrices and $\bold{B}$ be a matrix resulting from $\bold{A}$ by:
+
+    \begin{enumerate}
+
+      \item interchanging two rows of $\bold{A}\Rightarrow\text{ det}(\bold{B})=-\text{ det}(\bold{A})$
+
+      \item Multiplying row of $\bold{A}$ by a non-zero constant $\Rightarrow\text{ det}(\bold{B})=c\text{ det}(\bold{A})$, where $c$ is a scalar
+
+      \item Add multiple of row of $\bold{A}$ to another row $\Rightarrow\text{ det}(\bold{B})=\text{ det}(\bold{A})$ (no change)
+
+      \item ex. Given $\begin{vmatrix} a & b & c\\ d & e & f\\ g & h & i \end{vmatrix}=-6$
+
+        \begin{enumerate}
+
+          \item $\begin{vmatrix} d & e & f\\ a & b & c\\ g & h & i \end{vmatrix}=6$
+
+          \item $\begin{vmatrix} 3a & 3b & 3c\\ 2d & 2e & 2f\\ -g & -h & -i \end{vmatrix}=-6(-6)=36$
+
+          \item $\begin{vmatrix} a-d & b-e & c-f\\ 2d & 2e & 2f\\ g & h & i \end{vmatrix}=2(-6)=-12$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
