@@ -265,12 +265,17 @@ citecolor=blue,
 
     \setcounter{enumi}{66}
 
-  \item About Column 1: $(yz^2-y^2z)-(xz^2-x^2z)+(xy^2-x^2y)$
+  \item 
 
     \begin{equation*}
       \begin{split}
-        x^2z+x^2y+xy^2-y^2z-xz^2+yz^2=(y-x)(z-x)(z-y)\\
-        \text{True}
+        \begin{vmatrix} 1 & x & x^2\\ 1 & y & y^2\\ 1 & z & z^2\\ \end{vmatrix}\\
+        R_2-R_3\widetilde{\rightarrow}R_2\text{ and }R_1-R_3\widetilde{\rightarrow}R_1\\
+        \begin{vmatrix} 0 & x-z & x^2-z^2\\ 0 & y-z & y^2-z^2\\ 1 & z & z^2\\ \end{vmatrix}=(x-z)(y^2-z^2)-(y-z)(x^2-z^2)\\
+        (x-z)(y^2-z^2)-(y-z)(x^2-z^2)= (x-z)(z+y)(y-z)-(y-z)(x+z)(x-z)\\
+        (x-z)(z+y)(y-z)-(y-z)(x+z)(x-z)=(x-z)(y-z)\left( z+y-x-z \right)\\
+        =(x-z)(y-z)\left( z+y-x-z \right)=(x-z)(y-z)(y-x)\\
+        (x-z)(y-z)(y-x)=(z-x)(z-y)(y-x)\\
       \end{split}
       \label{2}
     \end{equation}
