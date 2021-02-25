@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Properties of Determinants}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item If $\bold{A}$ and $\bold{B}$ are square matrices of order $n$, then $\det\left( \bold{AB} \right)=\det(\bold{A})\det(\bold{B})$
+
+  \item All row operations are extended to columns
+
+  \item Let $\ord(\bold{A})=n$ and $c$ be a scalar, then $\det(c\bold{A})=c^n\det(\bold{A})$
+
+  \item $\bold{A}$ is invertible iff the determinant of $\bold{A}\neq0$
+
+  \item Fundamental Theorem (version II)
+
+    \begin{enumerate}
+
+      \item If $\bold{A}$ is an $n$x$n$ matrix, then the following conditions are equivalent:
+        \begin{enumerate}
+
+          \item $\bold{A}$ is invertible
+
+          \item $\bold{A}x=\bold{B}$ has a unique solution for any $n$x1 column matrix $\bold{B}$
+
+          \item $\bold{A}x=0$ has only trivial solution $x=0$
+
+          \item $\bold{A}$ \widetilde{R} $I_n$
+
+          \item $\bold{A}$ can be written as a product of elementary matrices
+
+          \item $\det(\bold{A})\neq0$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
