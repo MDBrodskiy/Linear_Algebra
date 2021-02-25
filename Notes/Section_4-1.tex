@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Vectors in $\mathbb{R}^n$}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Vector $-$ Quantity described with length and direction
+
+    \begin{enumerate}
+
+      \item Written bold and lowercase ($\overrightarrow{\bold{x}}$)
+
+      \item Vectors are position free
+
+      \item Standard Position $-$ When the initial point is at the origin and the terminal point is somewhere in the plane
+
+    \end{enumerate}
+
+  \item Algebraic work with vectors:
+
+    \begin{enumerate}
+
+      \item Addition: $\langle u_1, u_2 \rangle + \langle v_1, v_2 \rangle= \langle u_1+v_1, u_2+v_2 \rangle$
+
+      \item Subtraction: $\langle u_1, u_2 \rangle - \langle v_1, v_2 \rangle= \langle u_1-v_1, u_2-v_2 \rangle$
+
+      \item Scalar Multiplication: $c\langle u_1, u_2 \rangle = \langle cu_1, cu_2 \rangle$
+
+      \item $\overrightarrow{\bold{u}}=\overrightarrow{\bold{v}}$ iff $u_1=v_1$ and $u_2=v_2$
+
+    \end{enumerate}
+
+  \item Zero Vector $-$ $\overrightarrow{\bold{o}}=\langle 0, 0,\dots, 0\rangle$
+
+  \item Properties of vectors in $\mathbb{R}^2$
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}} \in \mathbb{R}$ (two vectors in $\mathbb{R}^2$ remain in $\mathbb{R}^2$)
+
+      \item $\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}} =\overrightarrow{\bold{v}} + \overrightarrow{\bold{u}}$
+
+      \item $(\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}}) + \overrightarrow{\bold{w}} =\overrightarrow{\bold{u}} + (\overrightarrow{\bold{v}} + \overrightarrow{\bold{w}}) $
+
+      \item $\overrightarrow{\bold{u}}+\overrightarrow{\bold{o}}=\overrightarrow{\bold{u}}$
+
+      \item $\overrightarrow{\bold{u}} + (-\overrightarrow{\bold{u}})=\overrightarrow{\bold{o}}$
+
+      \item $c\overrightarrow{\bold{u}} \in \mathbb{R}$ (scalar times a vector in $\mathbb{R}^2$ remains a vector in $\mathbb{R}^2$)
+
+      \item $c(\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}})=c\overrightarrow{\bold{u}}+c\overrightarrow{\bold{v}}$
+
+      \item $(c+d)\overrightarrow{\bold{u}}=c\overrightarrow{\bold{u}} + d\overrightarrow{\bold{u}}$
+
+      \item $c(d\overrightarrow{\bold{u}})=(cd)\overrightarrow{\bold{u}}$
+
+      \item $1(\overrightarrow{\bold{u}})=\overrightarrow{\bold{u}}$
+
+    \end{enumerate}
+
+  \item Vectors in $\mathbb{R}^n$
+
+    \begin{enumerate}
+
+      \item All properties for vectors in $\mathbb{R}^2$ apply to $\mathbb{R}^n$ as well
+
+      \item Addition: $\langle u_1, u_2, \dots, u_n\rangle + \langle v_1, v_2, \dots, v_n \rangle = \langle u_1+v_1, u_2+v_2, \dots, u_n+v_n \rangle$
+
+      \item Subtraction: $\langle u_1, u_2, \dots, u_n\rangle - \langle v_1, v_2, \dots, v_n \rangle = \langle u_1-v_1, u_2-v_2, \dots, u_n-v_n \rangle$
+
+      \item Scalar Multiplication: $c\langle u_1, u_2, \dots, u_n\rangle = \langle cu_1, cu_2, \dots, cu_n \rangle$
+
+      \item Equality: $\overrightarrow{\bold{u}}=\overrightarrow{\bold{v}}$ iff $u_1=v_1$, $u_2=v_2$, \dots, and $u_n=v_n$
+
+    \end{enumerate}
+
+  \item $\overrightarrow{\bold{x}}$ is a linear combination of $\overrightarrow{\bold{v}}_1, \overrightarrow{\bold{v}}_2, \dots, \overrightarrow{\bold{v}}_n$ $\exists$ $c_1, c_2,\dots,c_n$ such that $\overrightarrow{\bold{x}}=c_1\overrightarrow{\bold{v}}_1 + c_2\overrightarrow{\bold{v}}_2 + \dots + c_n\overrightarrow{\bold{v}}_n
+
+\end{itemize}
+
+\end{document}
+
