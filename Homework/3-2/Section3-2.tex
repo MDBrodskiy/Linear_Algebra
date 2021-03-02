@@ -1,0 +1,351 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 3.2 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+
+    \setcounter{enumi}{4}
+
+  \item This matrix shows column interchanging ($C_2\leftrightarrow C_3$). This means that the sign of the matrix is switched, so multiplying the interchanged matrix by a negative would result in the same determinant as the first matrix.
+
+  \item This matrix shows row interchanging ($R_1\leftrightarrow R_3$). This means that the sign of the matrix is switched, so multiplying the interchanged matrix by a negative would result in the same determinant as the first matrix.
+
+    \setcounter{enumi}{8}
+
+  \item The matrix shows multiplication properties. Column 3 has a three factored out and Column 2 has a four factored out. The matrix is then multiplied by the product of the two, or twelve, which makes the determinant that same as it was in the untouched matrix.
+
+    \setcounter{enumi}{10}
+
+  \item A five is factored out of every term in the matrix. According to the formula $\det(c\bold{A})=c^{\text{ord}(\bold{A})}\det(\bold{A})$, to maintain determinant equivalence, a term that is factored out needs to be raised to the power of the order of the matrix, or, in this case, 3.
+
+    \setcounter{enumi}{12}
+
+  \item When a row is added to the multiple of another row, the determinant stays the same. In this matrix, negative four times the first row is added to the second row, which means the two determinants are equal.
+
+    \setcounter{enumi}{18}
+
+  \item The first column and the last column are scalar multiples of each other. When two rows or columns are scalar multiples of each other, then the determinant is zero.
+
+    \setcounter{enumi}{24}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          1 & 7 & -3\\
+          1 & 3 & 1\\
+          4 & 8 & 1\\
+        \end{vmatrix}\\
+        R_2-R_1\widetilde{\rightarrow}R_2\text{ and }R_3-4R_1\widetilde{\rightarrow}R_3\\
+        \begin{vmatrix} 
+          1 & 7 & -3\\
+          0 & -4 & 4\\
+          0 & -20 & 13\\
+        \end{vmatrix}\\
+        R_3-5R_2\widetilde{\rightarrow}R_3\\
+        \begin{vmatrix} 
+          1 & 7 & -3\\
+          0 & -4 & 4\\
+          0 & 0 & -7\\
+        \end{vmatrix}\\
+        \det\left(  
+        \begin{vmatrix} 
+          1 & 7 & -3\\
+          1 & 3 & 1\\
+          4 & 8 & 1\\
+      \end{vmatrix}\right)=1(-4)(-7)=28\\
+      \end{split}
+      \label{1}
+    \end{equation}
+
+    \setcounter{enumi}{26}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          2 & -1 & -1\\
+          1 & 3 & 2\\
+          -6 & 3 & 3\\
+        \end{vmatrix}\\
+        -3R_1=R_3\\
+        \therefore \det(\bold{A})=0
+      \end{split}
+      \label{2}
+    \end{equation}
+
+    \setcounter{enumi}{28}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          3 & 2 & -3\\
+          7 & 5 & 1\\
+          -1 & 2 & 6\\
+        \end{vmatrix}\\
+        3R_3+R_1\widetilde{\rightarrow}R_1\text{ and }7R_3+R_2\widetilde{\rightarrow}R_2\\
+        \begin{vmatrix} 
+          0 & 8 & 15\\
+          0 & 19 & 43\\
+          -1 & 2 & 6\\
+        \end{vmatrix}\\
+        R_1\widetilde{\leftrightarrow}R_3\text{ and }-\frac{19}{8}R_2+R_1\widetilde{\rightarrow}R_1\\
+        \begin{vmatrix} 
+          -1 & 2 & 6\\
+          0 & 19 & 43\\
+          0 & 0 & -\frac{59}{19}\\
+        \end{vmatrix}\\
+        -1(-1(19)\left(-\frac{59}{19}\right))=-59
+      \end{split}
+      \label{3}
+    \end{equation}
+
+    \setcounter{enumi}{30}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          4 & -7 & 9 & 1\\
+          6 & 2 & 7 & 0\\
+          3 & 6 & -3 & 3\\
+          0 & 7 & 4 & -1\\
+        \end{vmatrix}\\
+        R_4+R_1\widetilde{\rightarrow}R_1\\
+        \begin{vmatrix} 
+          4 & 0 & 13 & 0\\
+          6 & 2 & 7 & 0\\
+          3 & 6 & -3 & 3\\
+          0 & 7 & 4 & -1\\
+        \end{vmatrix}\\
+        3R_4+R_3\widetilde{\rightarrow}R_3\\
+        \begin{vmatrix} 
+          4 & 0 & 13 & 0\\
+          6 & 2 & 7 & 0\\
+          3 & 27 & 9 & 0\\
+          0 & 7 & 4 & -1\\
+        \end{vmatrix}\\
+        -\frac{13}{9}R_3+R_1\widetilde{\rightarrow}R_1\text{ and }-\frac{7}{9}R_3+R_2\widetilde{\rightarrow}R_2\\
+        \begin{vmatrix} 
+          -\frac{1}{3} & -39 & 0 & 0\\
+          \frac{11}{3} & -19 & 0 & 0\\
+          3 & 27 & 9 & 0\\
+          0 & 7 & 4 & -1\\
+        \end{vmatrix}\\
+        -\frac{39}{19}R_2+R_1\widetilde{\rightarrow}R_1\\
+        \begin{vmatrix} 
+          -\frac{448}{57} & 0 & 0 & 0\\
+          \frac{11}{3} & -19 & 0 & 0\\
+          3 & 27 & 9 & 0\\
+          0 & 7 & 4 & -1\\
+        \end{vmatrix}\\
+        \left( -\frac{448}{57} \right)(-19)(9)(-1)=-1344
+      \end{split}
+      \label{4}
+    \end{equation}
+
+    \setcounter{enumi}{32}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          1 & -2 & 7 & 9\\
+          3 & -4 & 5 & 5\\
+          3 & 6 & 1 & -1\\
+          4 & 5 & 3 & 2\\
+        \end{vmatrix}\\
+        R_3-R_2\widetilde{\rightarrow}R_3\text{ and }-4R_1+R_4\widetilde{\rightarrow}R_4\\
+        \begin{vmatrix} 
+          1 & -2 & 7 & 9\\
+          3 & -4 & 5 & 5\\
+          0 & 10 & -4 & -6\\
+          0 & 13 & -25 & -34\\
+        \end{vmatrix}\\
+        R_2-3R_1\widetilde{\rightarrow}R_2\\
+        \begin{vmatrix} 
+          1 & -2 & 7 & 9\\
+          0 & 2 & -16 & -22\\
+          0 & 10 & -4 & -6\\
+          0 & 13 & -25 & -34\\
+        \end{vmatrix}\\
+        R_3-5R_2\widetilde{\rightarrow}R_3\text{ and }R_4-\frac{13}{2}R_2\widetilde{\rightarrow}R_4\\
+        \begin{vmatrix} 
+          1 & -2 & 7 & 9\\
+          0 & 2 & -16 & -22\\
+          0 & 0 & 76 & 104\\
+          0 & 0 & 79 & 109\\
+        \end{vmatrix}\\
+        -\frac{79}{76}R_3+R_4\widetilde{\rightarrow}R_4\\
+        \begin{vmatrix} 
+          1 & -2 & 7 & 9\\
+          0 & 2 & -16 & -22\\
+          0 & 0 & 76 & 104\\
+          0 & 0 & 0 & \frac{17}{19}\\
+        \end{vmatrix}\\
+        \left( \frac{17}{19} \right)(76)(2)(1)=136
+      \end{split}
+      \label{5}
+    \end{equation}
+
+    \setcounter{enumi}{34}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          2 & 6 & 0 & -4 & 3\\
+          2 & 0 & 2 & 6 & 2\\
+          0 & 2 & 8 & 0 & 0\\
+          0 & 1 & 1 & 2 & 2\\
+        \end{vmatrix}\\
+        R_4-2R_5\widetilde{\rightarrow}R_4\text{ and }R_3-2R_1\widetilde{\rightarrow}R_3\text{ and }R_2-R_3\widetilde{\rightarrow}R_2\\
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          0 & 8 & -16 & -12 & -1\\
+          0 & -6 & 2 & 10 & -1\\
+          0 & 0 & 6 & -4 & -4\\
+          0 & 1 & 1 & 2 & 2\\
+        \end{vmatrix}\\
+        R_5\widetilde{\leftrightarrow}R_2\text{ and }R_4\widetilde{\leftrightarrow}R_3\\
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          0 & 1 & 1 & 2 & 2\\
+          0 & 0 & 6 & -4 & -4\\
+          0 & -6 & 2 & 10 & -1\\
+          0 & 8 & -16 & -12 & -1\\
+        \end{vmatrix}\\
+        R_4+6R_2\widetilde{\rightarrow}R_4\text{ and }R_5-8R_2\widetilde{\rightarrow}R_5\\
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          0 & 1 & 1 & 2 & 2\\
+          0 & 0 & 6 & -4 & -4\\
+          0 & 0 & 8 & 22 & 11\\
+          0 & 0 & -24 & -28 & -17\\
+        \end{vmatrix}\\
+        R_4-\frac{4}{3}R_3\widetilde{\rightarrow}R_4\text{ and }R_5+4R_3\widetilde{\rightarrow}R_5\\
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          0 & 1 & 1 & 2 & 2\\
+          0 & 0 & 6 & -4 & -4\\
+          0 & 0 & 0 & \frac{82}{3} & \frac{49}{3}\\
+          0 & 0 & 0 & -44 & -33\\
+        \end{vmatrix}\\
+        R_5+\frac{66}{41}R_4\widetilde{\rightarrow}R_5\\
+        \begin{vmatrix} 
+          1 & -1 & 8 & 4 & 2\\
+          0 & 1 & 1 & 2 & 2\\
+          0 & 0 & 6 & -4 & -4\\
+          0 & 0 & 0 & \frac{82}{3} & \frac{49}{3}\\
+          0 & 0 & 0 & 0 & -\frac{275}{41}\\
+        \end{vmatrix}\\
+        (-1)(-1)(1)(1)(6)\left(\frac{82}{3}\right)\left(-\frac{275}{41}\right)=-1100
+      \end{split}
+      \label{6}
+    \end{equation}
+
+    \setcounter{enumi}{36}
+
+  \item
+
+    \begin{enumerate}
+
+      \item True. An example of this is problem number 6.
+
+      \item True. This is a multiplicative property of matrices.
+
+      \item True. When two rows are equal or when they are scalar multiples of each other, the determinant must be zero.
+
+    \end{enumerate}
+
+  \item
+
+    \begin{enumerate}
+
+      \item False. Adding a multiple of another row changes nothing about the determinant.
+
+      \item True. This is stated on page 120.
+
+      \item True. Just like when two rows are the same, when a row is a scalar multiple of another, then the determinant is zero.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
