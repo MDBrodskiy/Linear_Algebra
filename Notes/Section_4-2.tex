@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Vector Spaces}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item $\mathbb{R}^2$, $\mathbb{R}^3$, \dots, $\mathbb{R}^n$ are all vector spaces with certain properties.
+
+  \item Properties of Vector Spaces, where $\bold{V}$ is a set on which vector addition and scalar multiplication are defined, and $\overrightarrow{\bold{u}}$, $\overrightarrow{\bold{v}}$, and $\overrightarrow{\bold{w}} \in \bold{V}$ and $c$ and $d$ are scalars, then $\bold{V}$ is a vector space if:
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}} \in \bold{V}$
+
+      \item $\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}} = \overrightarrow{\bold{v}} + \overrightarrow{\bold{u}}$
+
+      \item $\overrightarrow{\bold{u}} + (\overrightarrow{\bold{v}} + \overrightarrow{\bold{w}})=(\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}}) + \overrightarrow{\bold{w}}$
+
+      \item  $\bold{V}$ has a zero vector for every $\overrightarrow{\bold{u}}$ such that $\overrightarrow{\bold{u}} + \bold{0} =\overrightarrow{\bold{u}}$
+
+      \item For every $\overrightarrow{\bold{u}}$ in $\bold{V}$ there is a vector such that $\overrightarrow{\bold{u}} + (-\overrightarrow{\bold{u}}=0$
+
+      \item $c\overrightarrow{\bold{u}} \in \bold{V}$ 
+
+      \item $c(\overrightarrow{\bold{u}} + \overrightarrow{\bold{v}})= c\overrightarrow{\bold{u}}+c\overrightarrow{\bold{v}}$
+
+      \item $(c+d)\overrightarrow{\bold{u}}=c\overrightarrow{\bold{u}}+d\overrightarrow{\bold{u}}$
+
+      \item $c(d\overrightarrow{\bold{u}})=(cd)\overrightarrow{\bold{u}}$
+
+      \item $1(\overrightarrow{\bold{u}})=\overrightarrow{\bold{u}}$
+
+    \end{enumerate}
+
+  \item Polynomials of Degree $n$
+
+    \begin{enumerate}
+
+      \item $P_1(x)=\left\{ ax+b \big| a,b\in\mathbb{R} \right\}$ Like in $\mathbb{R}^2$
+
+      \item $P_2(x)=\left\{ ax^2+bx+c \big| a,b,c\in\mathbb{R} \right\}$ Like in $\mathbb{R}^3$
+
+      \item $P_n(x)=\left\{ a_0+a_1x+a_2x^2+\dots+a_nx^n \big| a_i\in\mathbb{R} \right\}$ Like in $\mathbb{R}^n$
+
+      \item $P_0(x)=\left\{ a \big| a\in\mathbb{R} \right\}$ Like in $\mathbb{R}^1$
+
+    \end{enumerate}
+
+    \newpage
+
+  \item Standard Vector Spaces
+
+    \begin{enumerate}
+
+      \item $\mathbb{R}$ = set of all real numbers
+
+      \item $\mathbb{R}^2$ = set of all ordered pairs
+
+      \item $\mathbb{R}^3$ = set of all ordered triples
+
+      \item $\mathbb{R}^n$ = set of all $n$-tuples
+
+      \item $C(-\infty,\infty)$ = set of all continuous functions defined on the real number line
+
+      \item $C[a,b]$ = set of all continuous functions defined on a closed interval $[a,b]$, where $a\neq b$
+
+      \item $P$ = set of all polynomials
+
+      \item $P_n$ = set of all polynomials of degree $\leq n$ (together with the zero polynomial)
+
+      \item $M_{m,n}$ = set of all $m\times n$ matrices
+
+      \item $M_{n,n}$ = set of all $n\times n$ matrices
+
+    \end{enumerate}
+
+  \item Let $\overrightarrow{\bold{v}}$ be any element of a vector space $\bold{V}$, and let $c$ be any scalar. Then the properties below are true.
+
+    \begin{enumerate}
+
+      \item $0\overrightarrow{\bold{v}}=\bold{0}$
+
+      \item $c\bold{0}=\bold{0}$
+
+      \item If $c\overrightarrow{\bold{v}}=0$, then $c=0$ or $\overrightarrow{\bold{v}}=0$
+
+      \item $(-1)\overrightarrow{\bold{v}}=-\overrightarrow{\bold{v}}$
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
