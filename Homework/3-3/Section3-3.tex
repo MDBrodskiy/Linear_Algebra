@@ -72,45 +72,129 @@ citecolor=blue,
 
   \item
 
+    \begin{enumerate}
+
+      \item $|\bold{A}|=-2(-2)-1(4)=0$
+
+      \item $|\bold{B}|=-1(1)-0(1)=-1$
+
+      \item $\bold{AB}=\left[ \begin{array}{cc} -2 & -3\\ 4 & 6  \end{array} \right]$
+
+      \item $|\bold{AB}|=-2(6)-4(3)=0$
+
+        \begin{center}
+          $|\bold{A}||\bold{B}|=|\bold{AB}|$ \checkmark 
+        \end{center}
+
+    \end{enumerate}
+
     \setcounter{enumi}{2}
 
   \item
+
+    \begin{enumerate}
+
+      \item $|\bold{A}|=-1(-1)-2(0)+1(1)=2$
+
+      \item $|\bold{B}|=-1(2)(3)=-6$
+
+      \item $\bold{AB}=\left[ \begin{array}{ccc} 1 & 4 & 3\\ -1 & 0 & 3\\ 0 & 2 & 0  \end{array} \right]$
+
+      \item $|\bold{AB}|=-12$
+
+        \begin{center}
+          $|\bold{A}||\bold{B}|=|\bold{AB}|$ \checkmark 
+        \end{center}
+
+    \end{enumerate}
 
     \setcounter{enumi}{4}
 
   \item
 
+    \begin{enumerate}
+
+      \item $|\bold{A}|=3$
+
+      \item $|\bold{B}|=6$
+
+      \item $\bold{AB}=\left[ \begin{array}{cccc} 6 & 3 & -2 & 2\\ 2 & 1 & 0 & -1\\ 9 & 4 & -3 & 8\\ 8 & 5 & -4 & 5  \end{array} \right]$
+
+      \item $|\bold{AB}|=18$
+
+        \begin{center}
+          $|\bold{A}||\bold{B}|=|\bold{AB}|$ \checkmark 
+        \end{center}
+
+    \end{enumerate}
+
     \setcounter{enumi}{6}
 
-  \item
+  \item $5^2\left( 1(-4)-2(3) \right)=-250$
 
     \setcounter{enumi}{8}
 
-  \item
+  \item $3^3\left( -1(15-16)-2(10-12)+3(8-9) \right)=54$
 
     \setcounter{enumi}{10}
 
-  \item
+  \item $2^3\left( (15-16)+2(-10+12)+3(8-9) \right)=0$
 
     \setcounter{enumi}{12}
 
-  \item
+  \item $5^4\left(\begin{vmatrix} 1 & 0 & -3 & 0\\ 0 & 1 & 0 & 0\\ -2 & 0 & 1 & 0\\ 0 & -4 & 0 & 1\\  \end{vmatrix}\right)=5^4\left( \begin{vmatrix} -5 & 0 & 0 & 0\\ 0 & 1 & 0 & 0\\ -2 & 0 & 1 & 0 \\ 0 & -4 & 0 & 1  \end{vmatrix} \right)=-3125$
 
     \setcounter{enumi}{18}
 
-  \item
+  \item $5(8)-4(10)=0$. The matrix is singular.
 
     \setcounter{enumi}{22}
 
-  \item
+  \item $1(8)(0)(2)=0$. The matrix is singular.
 
     \setcounter{enumi}{24}
 
   \item
 
+    \begin{enumerate}
+
+      \item $\bold{A}^{-1}=\frac{1}{5}\left[ \begin{array}{cc} 4 & -3\\ -1 & 2  \end{array} \right]=\left[ \begin{array}{cc} \frac{4}{5} & -\frac{3}{5}\\ -\frac{1}{5} & \frac{2}{5}  \end{array} \right]\Rightarrow\frac{8}{25}-\frac{3}{25}=\frac{1}{5}$
+
+      \item $\begin{vmatrix} 2 & 3\\ 1 & 4  \end{vmatrix}=4(2)-3(1)=5\Rightarrow \frac{1}{5}$
+
+        \begin{center}
+          $|\bold{A}^{-1}|=\frac{1}{|\bold{A}|}$ \checkmark
+        \end{center}
+
+    \end{enumerate}
+
     \setcounter{enumi}{28}
 
-  \item
+  \item 
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{equation*}
+          \begin{split}
+          \left[ \begin{array}{c c c c | c c c c} 1 & 0 & -1 & 3& 1 & 0 & 0 & 0\\ 1 & 0 & 3 & -2 & 0 & 1 & 0 & 0\\ 2 & 0 & 2 & -1 & 0 & 0 & 1 & 0\\ 1 & -3 & 1 & 2 & 0 & 0 & 0 & 1  \end{array} \right]\\
+          \left[ \begin{array}{c c c c | c c c c} 1 & 0 & -1 & 3& 1 & 0 & 0 & 0\\ 0 & 0 & 4 & -5 & -1 & 1 & 0 & 0\\ 0 & 0 & 4 & -7 & -2 & 0 & 1 & 0\\ 0 & -3 & 2 & -1 & -1 & 0 & 0 & 1  \end{array} \right]\\
+          \left[ \begin{array}{c c c c | c c c c} 1 & 0 & -1 & 3& 1 & 0 & 0 & 0\\ 0 & 1 & -\frac{2}{3} & \frac{1}{3} & \frac{1}{3} & 0 & 0 & -\frac{1}{3} \\ 0 & 0 & 1 & -\frac{7}{4} & -\frac{1}{2} & 0 & \frac{1}{4} & 0\\ 0 & 0 & 0 & 2 & 1 & 1 & -1 & 0\\  \end{array} \right]\\
+          \left[ \begin{array}{c c c c | c c c c} 1 & 0 & 0 & \frac{5}{4} & \frac{1}{2} & 0 & \frac{1}{4} & 0\\ 0 & 1 & 0 & -\frac{5}{6} & 0 & 0 & \frac{1}{6} & -\frac{1}{3} \\ 0 & 0 & 1 & 0 & \frac{3}{8} & \frac{7}{8} & -\frac{5}{8} & 0\\ 0 & 0 & 0 & 1 & \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} & 0\\  \end{array} \right]\\
+          \left[ \begin{array}{c c c c | c c c c} 1 & 0 & 0 & 0 & -\frac{1}{8} & -\frac{5}{8} & \frac{7}{8} & 0\\ 0 & 1 & 0 & 0 & \frac{5}{12} & \frac{5}{12} & -\frac{1}{4} & -\frac{1}{3} \\ 0 & 0 & 1 & 0 & \frac{3}{8} & \frac{7}{8} & -\frac{5}{8} & 0\\ 0 & 0 & 0 & 1 & \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} & 0\\  \end{array} \right]\\
+          \det\left( \bold{A}^{-1} \right)=-\frac{1}{3}\left[ -\frac{1}{8}\left( -\frac{7}{16}+\frac{5}{16}  \right)+\frac{5}{8}\left( -\frac{3}{16}+\frac{5}{16} \right)+\frac{7}{8}\left( \frac{3}{16}-\frac{7}{16} \right) \right]=\frac{1}{24}
+          \end{split}
+          \label{1}
+        \end{equation}
+
+      \item $|\bold{A}|=-3\left[ 2(2-9)-(1-6)+(-3+4) \right]=24\Rightarrow\frac{1}{24}$
+
+        \begin{center}
+          $|\bold{A}^{-1}|=\frac{1}{|\bold{A}|}$ \checkmark
+        \end{center}
+
+    \end{enumerate}
 
     \setcounter{enumi}{30}
 
