@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 4.1 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \setcounter{enumi}{6}
+
+  \item $\langle 1,3\rangle + \langle 2, -2 \rangle=\langle 3,1\rangle$
+
+    \begin{figure}[h]
+      \centering
+      \include{FigP7}
+      \caption{Problem 7 Figure}
+      \label{fig:1}
+    \end{figure}
+
+    \setcounter{enumi}{10}
+
+  \item $\overrightarrow{\bold{v}}=\frac{3}{2}\overrightarrow{\bold{u}}\Rightarrow \frac{3}{2}\langle -2, 3\rangle=\langle -3, \frac{9}{2}\rangle$
+
+    \begin{figure}[h]
+      \centering
+      \include{FigP11}
+      \caption{Problem 11 Figure}
+      \label{fig:2}
+    \end{figure}
+
+    \setcounter{enumi}{18}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{\bold{u}}-\overrightarrow{\bold{v}}=\langle1,2,3\rangle - \langle 2,2,-1\rangle=\langle-1,0,4\rangle$
+
+      \item $\overrightarrow{\bold{v}}-\overrightarrow{\bold{u}}=\langle 2,2,-1\rangle-\langle1,2,3\rangle=\langle1,0,-4\rangle$
+
+
+    \end{enumerate}
+
+    \setcounter{enumi}{20}
+
+  \item $2\overrightarrow{\bold{u}}+4\overrightarrow{\bold{v}}-\overrightarrow{\bold{w}}=2\langle1,2,3\rangle+4\langle 2,2,-1\rangle-\langle4,0,-4\rangle=\langle6,12,6\rangle$
+
+    \setcounter{enumi}{23}
+
+  \item $\overrightarrow{\bold{z}}=-\frac{2\overrightarrow{\bold{u}}+\overrightarrow{\bold{v}}-\overrightarrow{\bold{w}}}{3}\Rightarrow -\frac{1}{3}\left( 2\langle1,2,3\rangle+\langle2,2,-1\rangle-\langle4,0,-4\rangle  \right)=\langle0,-2,-3\rangle$
+
+    \setcounter{enumi}{28}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{\bold{u}}-\overrightarrow{\bold{v}}=\langle 4,0,-3,5\rangle-\langle0,2,5,4\rangle=\langle4,-2,-8,1\rangle$
+
+      \item $2\overrightarrow{\bold{u}}+6\overrightarrow{\bold{v}}=2\langle 4,0,-3,5\rangle+6\langle0,2,5,4\rangle=\langle8,12,24,34\rangle$
+
+      \item $2\overrightarrow{\bold{v}}-\overrightarrow{\bold{u}}=2\langle0,2,5,4\rangle-\langle4,0,-3,5\rangle=\langle-4,4,13,3\rangle$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{34}
+
+  \item $\overrightarrow{\bold{w}}=\frac{1}{3}(\overrightarrow{\bold{u}}-2\overrightarrow{\bold{v}})=\frac{1}{3}\left( \langle1,-1,0,1\rangle-2\langle0,2,3,-1 \right)=\langle\frac{1}{3},-\frac{5}{3},-2,1\rangle$
+
+    \setcounter{enumi}{40}
+
+  \item $\overrightarrow{\bold{v}}=\overrightarrow{\bold{u}}+\overrightarrow{\bold{w}}$
+
+    \setcounter{enumi}{48}
+
+  \item $c_1\langle1,1,2,2\rangle+c_2\langle2,3,5,6\rangle+c_3\langle-3,1,-4,2\rangle=\langle0,5,3,0\rangle$. Such a combination is not possible.
+
+    \setcounter{enumi}{54}
+
+  \item Such a combination is not possible (although number 56 is)
+
+\end{enumerate}
+
+\end{document}
+
