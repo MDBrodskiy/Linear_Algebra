@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Spanning Sets and Linear Independence}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Linear Combinations $-$ If $\overrightarrow{\bold{w}}=a\overrightarrow{\bold{u}}+b\overrightarrow{\bold{v}}$, then $\overrightarrow{\bold{w}}$ is a linear combination of $\overrightarrow{\bold{u}}$ and $\overrightarrow{\bold{v}}$. $\overrightarrow{\bold{w}}=a\overrightarrow{\bold{u}}+b\overrightarrow{\bold{v}}$ is a plane (it spans a plane).
+
+  \item Definition: Let $\overrightarrow{\bold{v}}\in\bold{V}$. Then $\overrightarrow{\bold{v}}$ is a linear combination of $\overrightarrow{\bold{u}}_1, \overrightarrow{\bold{u}}_2, \dots,\overrightarrow{\bold{u}}_n$ if $\exists$ scalars $c_1,c_2,\dots,c_n$ such that $\overrightarrow{\bold{v}}=c_1\overrightarrow{\bold{u}}_1+c_2\overrightarrow{\bold{u}}_2+\dots+c_n\overrightarrow{\bold{u}}_n$
+
+    \begin{enumerate}
+
+      \item ex. $\left[ \begin{array}{cc} a & b\\ c & d\\ \end{array}\right]$ is a combination of $a\left[ \begin{array}{cc} 1 & 0\\ 0 & 0  \end{array} \right]+b\left[ \begin{array}{cc} 0 & 1\\ 0 & 0  \end{array} \right]+c\left[ \begin{array}{cc} 0 & 0\\ 1 & 0\\ \end{array}\right] + d\left[ \begin{array}{cc} 0 & 0\\ 0 & 1 \end{array}\right]$ (other solutions exist)
+
+    \end{enumerate}
+
+  \item The Span of a set of vectors: Let $S=\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_n \right\}$. Then, the span of $S$ is a set of all linear combinations of vectors in $S$ (i.e. span($S$)$=\left\{ c_1\overrightarrow{\bold{v}}_1+c_2\overrightarrow{\bold{v}}_2+\dots+\overrightarrow{\bold{v}}_n \right\}$). Note: when span($S$)$=\bold{V}$, it means $\bold{V}$ is spanned by $\overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_n$
+
+    \begin{enumerate}
+
+      \item ex. $\mathbb{R}^2=\text{span}\left\{ \hat{i},\hat{j} \right\}, \mathbb{R}^3=\text{span}\left\{ \hat{i},\hat{j},\hat{k} \right\}$
+
+    \end{enumerate}
+
+  \item The span of $S$ is always a subspace of $\bold{V}$, because closure is automatic.
+
+  \item Linear Independence $-$ A set of vectors $S=\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_n \right\}$ in vector space $\bold{V}$ is linearly independent if vector equation $c_1\overrightarrow{\bold{v}}_1+c_2\overrightarrow{\bold{v}}_2+\dots+c_n\overrightarrow{\bold{v}}_n=0$ has trivial solution only ($c_1=c_2=c_n=0$). Otherwise, it is linearly dependent.
+
+    \begin{enumerate}
+
+      \item ex. in $\mathbb{R}^2$: $\begin{array}{c} 2x+3y=1\\ 4x+6y=2\end{array}$
+
+      \item ex. in $\mathbb{R}^3$: $\overrightarrow{\bold{u}}_1=\langle2,1,0\rangle,\overrightarrow{\bold{u}}_2=\langle 3,5,-2\rangle,\overrightarrow{\bold{u}}_3=\langle 5,6,-2\rangle$, then $\overrightarrow{\bold{u}}_3=\overrightarrow{\bold{u}}_2+\overrightarrow{\bold{u}}_1$
+
+    \end{enumerate}
+
+  \item $S=\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_k \right\}, k\geq 2$ is linearly dependent iff $\overrightarrow{\bold{v}}_i$ can be written as a linear combination of other vectors in $S$.
+
+    \begin{enumerate}
+
+      \item $\left\{ \overrightarrow{\bold{o}} \right\}$ is linearly dependent
+
+      \item $\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2 \right\}$ is linearly dependent iff $\overrightarrow{\bold{v}}_2=c\overrightarrow{\bold{v}}_1$
+        
+      \item ex. Will 4 vectors in $\mathbb{R}^3$ be linearly independent? No, they will always be dependent.
+
+      \item ex. Can 4 vectors span $\mathbb{R}^3$? Yes, they can span $\mathbb{R}^3.
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
