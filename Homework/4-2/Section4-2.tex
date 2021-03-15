@@ -25,6 +25,8 @@
 \usepackage{gensymb}
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
 \usetikzlibrary{fadings}
 \usetikzlibrary{patterns}
 \usetikzlibrary{shadows.blur}
@@ -102,37 +104,109 @@ citecolor=blue,
 
     \setcounter{enumi}{20}
 
-  \item
+  \item The set $\left\{ (x,y): x\geq0,y\text{ is a real number} \right\}$ is not a vector space because it fails axiom six. If $(x,y)=(1,1)$, and $c=-1$, then $c(x,y)$ is not in the vector space
 
     \setcounter{enumi}{23}
 
-  \item
+  \item The set $\left\{ \left( x,\frac{1}{2}x \right): x\text{ is a real number} \right\}$ meets all 10 axioms, and is therefore a vector space
 
     \setcounter{enumi}{25}
 
-  \item
+  \item The set of all $2\times2$ matrices of the form $\left[ \begin{array}{cc} a & b\\ c & 1  \end{array} \right]$ fails axiom six, and, therefore, is not a vector space (ex. $k=-1\Rightarrow k\left[ \begin{array}{cc} a & b\\ c & 1  \end{array} \right]=\left[ \begin{array}{cc} -a & -b\\ -c & -1  \end{array} \right]$, and is no longer in $\bold{V}$)
 
-  \item
+  \item The set of all $3\times3$ matrices of the form $\left[ \begin{array}{c c c} 0 & a & b\\ c & 0 & d\\ e & f & 0  \end{array} \right]$ meets all 10 axioms and is, therefore, a vector space
 
     \setcounter{enumi}{33}
 
-  \item
+  \item The set of all $3\times3$ upper triangular matrices meet all 10 axioms, and, therefore, are vector spaces
 
-  \item
+  \item $C\left[ 0,1 \right]$, the set of all continuous functions defined on the interval $[0,1]$ meet all 10 axioms, and, therefore, are vector spaces
 
-  \item
+  \item $C\left[ -1,1 \right]$, the set of all continuous functions defined on the interval $[-1,1]$ meet all 10 axioms, and, therefore, are vector spaces
 
-  \item
+  \item By the definition given, it is not a vector space, because it fails axioms 4,5,7, and 8.
+
+    \begin{enumerate}
+
+      \item $x_1+y_1=x_1y_1$ is in $\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $x_1+y_1=x_1y_1=y_1x_1=y_1+x_1$ is true \textcolor{green}{\checkmark}
+
+      \item  $x_1+(y_1+z_1)=x_1+y_1z_1=x_1y_1z_1=x_1y_1+z_1=(x_1+y_1)+z_1$ is true \textcolor{green}{\checkmark}
+
+      \item $x_1+0=x_1\cdot0$ is not true \textcolor{red}{\xmark}
+
+      \item $x_1+(-a)=0\Rightarrow-ax_1$ is not true \textcolor{red}{\xmark}
+
+      \item $cx_1=x_1^c$ is in $\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $c(x_1+y_1)\neq cx_1+cy_1$ \textcolor{red}{\xmark}
+
+          \begin{enumerate}
+
+            \item $c(x_1+y_1)=(x_1+y_1)^c$
+
+                \item $cx_1+cy_1=x_1^c+y_1^c$
+
+            \end{enumerate}
+
+          \item $(c+d)x_1\neq cx_1+dx_1$ \textcolor{red}{\xmark}
+
+          \begin{enumerate}
+
+            \item $(c+d)x_1=x_1^{(c+d)}$
+
+                \item $cx_1+dx_1=x_1^c+x_1^d$
+
+            \end{enumerate}
+
+          \item $c(dx_1)=(cd)x_1$ \textcolor{green}{\checkmark}
+
+          \begin{enumerate}
+
+            \item $c(dx_1)=cx_1^d=x_1^{cd}$
+
+            \item $(cd)x_1=x_1^{cd}$
+
+            \end{enumerate}
+
+          \item $1x_1=x_1^1$ is true \textcolor{green}{\checkmark}
+
+      \end{enumerate}
 
     \setcounter{enumi}{39}
 
-  \item
+  \item $M_{2,2}$ is a vector space because:
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\begin{bmatrix} e & f\\ g & h  \end{bmatrix}=\begin{bmatrix} a+e & b+f\\ c+g & d+h  \end{bmatrix}$ is in $\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\begin{bmatrix} e & f\\ g & h  \end{bmatrix}=\begin{bmatrix} e & f\\ g & h  \end{bmatrix}+\begin{bmatrix} a & b\\ c & d  \end{bmatrix}$ is true \textcolor{green}{\checkmark}
+
+      \item $\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\left(\begin{bmatrix} e & f\\ g & h  \end{bmatrix}+\begin{bmatrix} i & j\\ k & l  \end{bmatrix}\right)=\left(\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\begin{bmatrix} e & f\\ g & h  \end{bmatrix}\right)+\begin{bmatrix} i & j\\ k & l  \end{bmatrix}$ is true \textcolor{green}{\checkmark} 
+
+      \item $\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\begin{bmatrix} 0 & 0\\ 0 & 0  \end{bmatrix}=\begin{bmatrix} a & b\\ c & d  \end{bmatrix}$ exists \textcolor{green}{\checkmark}
+
+      \item $\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+\begin{bmatrix} -a & -b\\ -c & -d  \end{bmatrix}=0$ exists \textcolor{green}{\checkmark}
+
+      \item $k\begin{bmatrix} a & b\\ c & d  \end{bmatrix}=\begin{bmatrix} ka & kb\\ kc & kd  \end{bmatrix}$ is in $\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $k\left( \begin{bmatrix} a & b\\ c & d  \end{bmatrix} + \begin{bmatrix} e & f\\ g & h  \end{bmatrix}\right)=k\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+k\begin{bmatrix} e & f\\ g & h  \end{bmatrix}$ is true \textcolor{green}{\checkmark}
+
+      \item $(k+l)\begin{bmatrix} a & b\\ c & d  \end{bmatrix}=k\begin{bmatrix} a & b\\ c & d  \end{bmatrix}+l\begin{bmatrix} a & b\\ c & d  \end{bmatrix}$ is true \textcolor{green}{\checkmark}
+
+      \item $k\left( l\begin{bmatrix} a & b\\ c & d  \end{bmatrix} \right)=(kl)\begin{bmatrix} a & b\\ c & d  \end{bmatrix}$ is true \textcolor{green}{\checkmark}
+
+      \item $1\left( \begin{bmatrix} a & b\\ c & d  \end{bmatrix} \right)=\begin{bmatrix} a & b\\ c & d  \end{bmatrix}$ is true \textcolor{green}{\checkmark}
+
+      \end{enumerate}
 
   \item
 
     \begin{enumerate}
 
-      \item 
+      \item It is not a vector space because axiom eight fails. For example, if $c=5$ and $d=10$, $(5+10)(x_1,y_1)=(15x_1,y_1)$, while $5(x_1,y_1)+10(x_1,y_1)=(15x_1,2y_1)$
 
     \end{enumerate}
 
@@ -142,7 +216,55 @@ citecolor=blue,
 
         \setcounter{enumii}{3}
 
-      \item 
+      \item By this $\mathbb{R}^3$ definition, it is a vector space
+
+        \begin{enumerate}
+
+          \item $(x_1,y_1,z_1)+(x_2,y_2,z_2)=(x_1+x_2+1,y_1+y_2+1,z_1+z_2+1)$ is in $\bold{V}$ \textcolor{green}{\checkmark}
+
+            \item $\overrightarrow{\bold{v}}_1+\overrightarrow{\bold{v}}_2=\overrightarrow{\bold{v}}_2+\overrightarrow{\bold{v}}_1$ is true \textcolor{green}{\checkmark} 
+
+          \item $\overrightarrow{\bold{v}}_1+\left( \overrightarrow{\bold{v}}_2+\overrightarrow{\bold{v}}_3 \right)=(\overrightarrow{\bold{v}}_1+\overrightarrow{\bold{v}}_2)+\overrightarrow{\bold{v}}_3$ is true \textcolor{green}{\checkmark}
+
+          \item $\left( x_1,y_1,z_1 \right) + \overrightarrow{\bold{o}}= \left( x_1+o_1+1,y_2+o_2+1,z_1+o_3+1 \right)\Rightarrow\overrightarrow{\bold{o}}=(-1,-1,-1)$ \textcolor{green}{\checkmark}
+
+          \item $\left( x_1,y_1,z_1 \right)+\left( a,b,c \right)=(-1,-1,-1)\Rightarrow \begin{array}{ccccc} a&=&-x_1&-&2\\b&=&-y_1&-&2\\c&=&z_1&-&2  \end{array}$ \textcolor{green}{\checkmark}
+
+          \item $c\left( x_1,y_1,z_1 \right)=\left( cx+c-1,cy+x-1,cz+c-1 \right)$ is in $\bold{V}$ \textcolor{green}{\checkmark} 
+
+          \item $c(\overrightarrow{\bold{v}}_1+\overrightarrow{\bold{v}}_2)=c\overrightarrow{\bold{v}}_1+c\overrightarrow{\bold{v}}_2$ \textcolor{green}{\checkmark}
+
+              \begin{enumerate}
+
+                \item $c( \left( x_1,y_1,z_1 \right)+\left( x_2,y_2,z_2 \right))=c\left( x_1+x_2+1,y_1+y_2+1,z_1+z_2+1 \right)\Rightarrow \left( c(x_1+x_2+1)+c-1,c(y_1+y_2+1)+c-1,c(z_1+z_2+1)+c-1 \right)$
+
+                \item $c\left( x_1,y_1,z_1 \right)+c\left( x_2,y_2,z_2 \right)=\\\left( cx_1+c-1,cy_1+c-1,cz_1+c-1 \right)+\left( cx_2+c-1,cy_2+c-1,cz_2+c-1 \right)\Rightarrow \left( cx_1+cx_2+2c-2+1,cy_1+cy_2+2c-2+1,cz_1+cz_2+2c-2+1 \right)=\left( cx_1+cx_2+2c-1,cy_1+cy_2+2c-1,cz_1+cz_2+2c-1 \right)$
+
+                \end{enumerate}
+
+              \item $(c+d)\overrightarrow{\bold{v}}_1=c\overrightarrow{\bold{v}}_1+d\overrightarrow{\bold{v}}_1$ \textcolor{green}{\checkmark}
+
+              \begin{enumerate}
+
+                \item $(c+d)(x_1,y_1,z_1)=\\\left( (c+d)x_1+(c+d)-1,(c+d)y_1+(c+d)-1,(c+d)z_1+(c+d)-1 \right)$
+
+                \item $c(x_1,y_1,z_1)+d(x_1,y_1,z_1)=\\(cx_1+c-1,cy_1+c-1,cz_1+c-1) + (dx_1+d-1,dy_1+d-1,dz_1+d-1)\Rightarrow\left( (c+d)x_1+(c+d)-1,(c+d)y_1+(c+d)-1,(c+d)z_1+(c+d)-1 \right)$
+
+                \end{enumerate}
+
+              \item $c(d\overrightarrow{\bold{v}}_1)=(cd)\overrightarrow{\bold{v}}_1$ \textcolor{green}{\checkmark}
+
+              \begin{enumerate}
+
+                \item $(cd)\overrightarrow{\bold{v}}_1=\left( cdx_1+cd-1,cdy_1+cd-1,cdz_1+cd-1 \right)$
+
+                \item $c(d\overrightarrow{\bold{v}}_1)=c\left( dx_1+d-1,dy_1+d-1,dz_1+d-1 \right)=\\\left( c(dx_1+d-1)+c-1,c(dy_1+d-1)+c-1,c(dz_1+d-1)+c-1 \right)\Rightarrow \left( cdx_1+cd-1,cdy_1+cd-1,cdz_1+cd-1 \right)$
+
+                \end{enumerate}
+
+            \item $1(x_1,y_1,z_1)=(1x_1+1-1,1y_1+1-1,1z_1+1-1)=(x_1,y_1,z_1)$ \textcolor{green}{\checkmark}
+
+          \end{enumerate}
 
     \end{enumerate}
 
