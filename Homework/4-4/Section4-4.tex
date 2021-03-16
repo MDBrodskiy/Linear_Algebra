@@ -76,7 +76,7 @@ citecolor=blue,
 
     \begin{enumerate}
 
-      \item 
+      \item $(-1,-2,2)=2(2,-1,3)-(5,0,4)$
 
     \end{enumerate}
 
@@ -88,95 +88,163 @@ citecolor=blue,
 
       \item 
 
+        \begin{equation*}
+          \begin{split}
+            \left[ \begin{array}{ccc|c} 2 & 2 & 2 & -1\\ 0 & 4 & -12 & 5\\ 7 & 5 & 13 & -6  \end{array} \right]\\
+            \left[ \begin{array}{ccc|c} 1 & 1 & 1 & -\frac{1}{2}\\ 0 & 1 & -3 & \frac{5}{4}\\ 0 & -2 & 6 & \frac{5}{2}  \end{array} \right]\\
+            \left[ \begin{array}{ccc|c} 1 & 0 & 4 & -\frac{7}{4}\\ 0 & 1 & -3 & \frac{5}{4}\\ 0 & 0 & 0 & 5  \end{array} \right]\\
+            S=\left\{ -\frac{7}{4}-t, \frac{5}{4}+t,t \right\}\\
+            (-1,5,-6)=-\frac{7}{4}(2,0,7)+\frac{5}{4}(2,4,5)+0(2,-12,13)
+          \end{split}
+          \label{1}
+        \end{equation}
+
     \end{enumerate}
 
     \setcounter{enumi}{4}
 
-  \item
+  \item $\begin{bmatrix} 6 & -19\\ 10 & 7  \end{bmatrix}=3\begin{bmatrix} 2 & -3\\ 4 & 1 \end{bmatrix}-2\begin{bmatrix} 0 & 5\\ 1 & -2 \end{bmatrix}$
 
     \setcounter{enumi}{6}
 
-  \item
+  \item $\begin{bmatrix} -2 & 23\\ 0 & -9 \end{bmatrix}=-\begin{bmatrix} 2 & -3\\ 4 & 1\end{bmatrix}+4\begin{bmatrix}0 & 5\\ 1 & -2 \end{bmatrix}$
 
     \setcounter{enumi}{8}
 
-  \item
+  \item $\begin{vmatrix} 2 & -1\\ 1 & 2 \end{vmatrix}=5$, so it does span $\mathbb{R}^2$
 
     \setcounter{enumi}{12}
 
-  \item
+  \item It does not span $\mathbb{R}^2$. It is a line.
 
     \setcounter{enumi}{14}
 
-  \item
+  \item $\begin{vmatrix} -1 & 2\\ 2 & -4 \end{vmatrix}=0$, so it does not span $\mathbb{R}^2$
 
     \setcounter{enumi}{18}
 
   \item
 
+    \begin{equation*}
+      \begin{split}
+         \begin{vmatrix} 4 & -1 & 2\\ 7 & 2 & -3\\ 3 & 6 & 5 \end{vmatrix}\\
+         \begin{vmatrix} 1 & -7 & -3\\ 0 & -3 & -10\\ 3 & 6 & 5 \end{vmatrix}\\
+         \begin{vmatrix} 1 & -7 & -3\\ 0 & -3 & -10\\ 0 & 0 & -76 \end{vmatrix}=228\\
+         \det(\bold{A})\neq0\text{, so it spans }\mathbb{R}^3
+      \end{split}
+      \label{2}
+    \end{equation}
+
     \setcounter{enumi}{20}
 
-  \item
+  \item It does not span $\mathbb{R}^3$, but $S$ spans a plane
 
     \setcounter{enumi}{24}
 
   \item
 
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 1 & 0 & 2\\ 0 & 0 & 0\\ 0 & 1 & 1  \end{vmatrix}=0\\
+        \text{It does not span }P_2
+      \end{split}
+      \label{3}
+    \end{equation}
+
   \item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{vmatrix} 0 & 8 & 0 & -4\\ -2 & 0 & 0 & 0\\ 1 & 0 & -1 & 1\\ 0 & 1 & 1 & 0  \end{vmatrix}=2(-8-4)=-24\\
+        \text{It does span }P_3
+      \end{split}
+      \label{4}
+    \end{equation}
 
     \setcounter{enumi}{30}
 
-  \item
+  \item Linearly independent
 
     \setcounter{enumi}{36}
 
-  \item
+  \item Linearly dependent
 
     \setcounter{enumi}{43}
 
-  \item
+  \item Linearly independent
 
     \setcounter{enumi}{46}
 
-  \item
+  \item $\begin{vmatrix} 7 & 6 & 1\\ -3 & 2 & -8\\ 4 & -1 & 5\\  \end{vmatrix}=7(2)-6(-15+32)+1(-5)=403$, so it is linearly independent
 
     \setcounter{enumi}{48}
 
-  \item
+  \item $2\bold{A}-\bold{B}+\bold{C}=0$, so it is linearly dependent
 
     \setcounter{enumi}{50}
 
-  \item
+  \item The system only has a trivial solution, so it is linearly independent
 
     \setcounter{enumi}{54}
 
-  \item
+  \item $(1,1,1)-(1,1,0)+0(0,1,1)-(0,0,1)=0\Rightarrow (1,1,1)=(1,1,0)+(0,0,1)+0(0,1,1)$
 
     \setcounter{enumi}{56}
 
-  \item
+    \item
+      
+        \begin{enumerate}
+
+          \item $\begin{vmatrix} t & 1 & 1\\ 1 & t & 1\\ 1 & 1 & t  \end{vmatrix}=t(t^2-1)-(t-1)+(1-t)=t^3-3t+2\Rightarrow t=1,-2$, so the set is linearly independent for $t\neq1,-2$
+
+          \item $\begin{vmatrix} t & 1 & 1\\ 1 & 0 & 1\\ 1 & 1 & 3t  \end{vmatrix}=t(-1)-(3t-1)+1=-4t+2\Rightarrow t=\frac{1}{2}$, so the set is linearly independent for $t\neq\frac{1}{2}$
+
+        \end{enumerate}
 
     \setcounter{enumi}{60}
 
   \item
 
+    \begin{equation*}
+      \begin{split}
+        S_1=\begin{bmatrix} 1 & 2 & -1\\ & 0 & 1 & 1\\ 2 & 5 & -1  \end{bmatrix}\\
+        S_1=\begin{bmatrix} 1 & 0 & -3\\ & 0 & 1 & 1\\ 0 & 1 & 1  \end{bmatrix}\\
+        S_1=\begin{bmatrix} 1 & 0 & -3\\ & 0 & 1 & 1\\ 0 & 0 & 0  \end{bmatrix}\\
+        S_2=\begin{bmatrix} -2 & -6 & 0 \\ 1 & 1 & -2\\ \end{bmatrix}\\
+        S_2=\begin{bmatrix} 1 & 3 & 0 \\ 0 & -2 & -2\\ \end{bmatrix}\\
+        S_2=\begin{bmatrix} 1 & 0 & -3 \\ 0 & 1 & 1\\ \end{bmatrix}\\
+        \therefore S_1=S_2
+      \end{split}
+      \label{5}
+    \end{equation}
+
     \setcounter{enumi}{64}
 
-  \item
+  \item $\begin{vmatrix} 1 & 1 & 1\\ 1 & 1 & 0\\ 1 & 0 & 0 \end{vmatrix}\neq 0$, so it is linearly independent and spans $\mathbb{R}^3$
 
     \setcounter{enumi}{66}
 
   \item
 
+    \begin{enumerate}
+
+      \item $S$ is linearly independent, so it only has the trivial solution. $T$ is a subset of $S$.
+
+      \item $T=\left\{ v_1,v_2,\dots,v_n \right\}$ and has a solution $c_1v_1+c_2v_2+\dots+c_nv_n=0$.
+
+      \item $v_n$ is in $S$, so it is impossible for $T$ to be linearly dependent.
+
+    \end{enumerate}
+
     \setcounter{enumi}{68}
 
-  \item
+  \item If a set contains the zero vector, then it can be said that $0v_1+0v_2+\dots+0v_n=\bold{0}$, which is not trivial because it contains the zero vector, so any such set must be linearly dependent
 
     \setcounter{enumi}{72}
 
-  \item
+    \item $c_1(\bold{u}+\bold{v})+c_2(\bold{u}-\bold{v})=0\Rightarrow (c_1+c_2)\bold{u}+(c_1-c_2)\bold{v}=0$ Because $\bold{u}$ and $\bold{v}$ were already determined to be linearly dependent, then so is $S=\left\{ \bold{u}+\bold{v},\bold{u}-\bold{v} \right\}
 
-  \item
+    \item $\begin{vmatrix} -1 & 0 & 1\\ 1 & -1 & 0\\ 0 & 1 & -1  \end{vmatrix}=-1(1)-0(-1)+1(1)=0$, so it must be linearly dependent
 
 \end{enumerate}
 
