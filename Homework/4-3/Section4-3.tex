@@ -72,55 +72,113 @@ citecolor=blue,
 
 \begin{enumerate}
 
-  \item
+  \item $W$ is a subspace of $\bold{V}$
+
+    \begin{enumerate}
+
+      \item $W$ contains the origin, and is therefore not empty \textcolor{green}{\checkmark}
+
+      \item $W\leq\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $(x_1,x_2,x_3,0)+(y_1,y_2,y_3,0)=(x_1+y_1,x_2+y_2,x_3+y_3,0)$ closed under addition \textcolor{green}{\checkmark}
+
+      \item $c(x_1,x_2,x_3,0)=(cx_1,cx_2,cx_3,0)$ closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{3}
 
-  \item
+  \item $W$ is a subspace of $\bold{V}$
 
-  \item
+    \begin{enumerate}
+
+      \item $W$ contains the origin, and is therefore not empty \textcolor{green}{\checkmark}
+
+      \item $W\leq\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $w_1=\begin{bmatrix} a_1 & b_1\\ a_1-2b_1 & 0\\ 0 & c_1  \end{bmatrix}$ and $w_2=\begin{bmatrix} a_2 & b_2\\ a_2-2b_2 & 0\\ 0 & c_2  \end{bmatrix}$, then\\ $w_1+w_2=\begin{bmatrix} a_1+a_2 & b_1+b_2\\ a_1+a_2-2(b_1+b_2) & 0\\ 0 & c_1+c_2  \end{bmatrix}\text{, where }\begin{array}{c} a=a_1+a_2\\ b=b_1+b_2\\ c=c_1+c_2  \end{array}$\\ closed under addition \textcolor{green}{\checkmark}
+
+      \item $cw_1=c\begin{bmatrix} a_1 & b_1\\ a_1-2b_1 & 0\\ 0 & c_1  \end{bmatrix}=\begin{bmatrix} ca_1 & cb_1\\ ca_1-2cb_1 & 0\\ 0 & cc_1  \end{bmatrix}\text{, where }\begin{array}{c} a=ca_1\\ b=cb_1\\ c=cc_1  \end{array}$\\ closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+  \item $W$ is a subspace of $\bold{V}$
+
+    \begin{enumerate}
+
+      \item $W$ contains the origin, and is therefore not empty \textcolor{green}{\checkmark}
+
+      \item $W\leq\bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $f+g$ is closed under addition \textcolor{green}{\checkmark}
+
+      \item $cf$ is closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{7}
 
-  \item
+  \item It is not closed under multiplication. Given some vector $c\langle 2, x_1, x_2$, where $c\neq1$, the value changes, so it is not a subspace
 
     \setcounter{enumi}{11}
 
-  \item
+  \item It is not closed under addition. Given $v_1=x+1$ and $v_2=1-x$, the sum is $2$, which is not a linear function of the form $ax+b$
 
     \setcounter{enumi}{14}
 
-  \item
+  \item It is not closed under multiplication. Given a value $c\neq1$, $cW$ is not in the vector space $\bold{V}$
 
-  \item
+  \item It is not closed under addition. Given another $M_{3,1}$ matrix, for example, $\begin{bmatrix} \sqrt{a} & 0 & a \end{bmatrix}$, and adding it to the original matrix generates a matrix that is not in $\bold{V}$
 
     \setcounter{enumi}{20}
 
-  \item
+  \item No, it does not contain the origin
 
     \setcounter{enumi}{22}
 
-  \item
+  \item Yes, because it contains the origin, and is closed under multiplication and addition
 
     \setcounter{enumi}{26}
 
-  \item
+  \item  Yes, because it contains the origin, and is closed under multiplication and addition
 
     \setcounter{enumi}{29}
 
-  \item
+  \item Yes, because it is not empty, and is closed under multiplication and addition
 
-  \item
+  \item No, because it is not closed under multiplication
 
     \setcounter{enumi}{32}
 
-  \item
+  \item No, because it is not closed under addition
 
     \setcounter{enumi}{42}
 
   \item
 
-  \item
+    \begin{enumerate}
+
+      \item True $-$ This is one of the four axioms that a subspace must follow
+
+      \item True $-$ If $\bold{V}$ and $\bold{W}$ are subspaces of the same vector space, then anything contained within $\bold{V}$ and $\bold{W}$ must also be a subspace
+
+      \item False $-$ Although this is possible, it is not definite, as $\bold{U}$ could be smaller than $\bold{V}$, which is smaller than $\bold{U}$
+
+    \end{enumerate}
+
+  \item 
+
+    \begin{enumerate}
+
+      \item True $-$ The origin must exist in a vector space, and a subspace can be equal to the vector space itself
+
+      \item True $-$ The origin must always be contained in a subspace
+
+      \item True $-$ This is one of 4 axioms that a subspace must follow
+
+      \item False $-$ It is possible that something contained within a vector space is not itself a vector space
+
+    \end{enumerate}
 
     \setcounter{enumi}{46}
 
@@ -128,21 +186,77 @@ citecolor=blue,
 
     \begin{enumerate}
 
-      \item 
+      \item $C(-\infty,\infty)$ is a subspace of $F(-\infty,\inty)$
+
+        \begin{enumerate}
+
+          \item $C(-\infty,\infty)$ contains the origin \textcolor{green}{\checkmark}
+
+          \item $C(-\infty,\infty)\leq F(-\infty,\infty)$ \textcolor{green}{\checkmark}
+
+      \item $f+g$ is closed under addition \textcolor{green}{\checkmark}
+
+      \item $cf$ is closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \end{enumerate}
 
   \item
 
+    \begin{enumerate}
+
+      \item $S$ contains the origin \textcolor{green}{\checkmark}
+
+      \item $S\leq C[0,1]$ \textcolor{green}{\checkmark}
+
+      \item $f+g$ is continuous because it is integrable and therefore closed under addition\textcolor{green}{\checkmark}
+
+      \item $cf$ is still continuous, and, therefore, closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
     \setcounter{enumi}{50}
 
-  \item
+  \item $W$ is a subspace of $\bold{V}$
 
-  \item
+    \begin{enumerate}
+
+      \item Because $W$ is a subspace, it is closed under multiplication. Since $a\bold{x}$ and $b\bold{y}$ are in $W$, so is $a\bold{x}+b\bold{y}$.
+
+      \item If $a=1$ and $b=0$, $a\bold{x}$ is in $W$. Therefore, if $a=1$ and $b=1$, $a\bold{x}+b\bold{y}$ is in $W$, meaning $W$ is closed under addition and scalar multiplication.
+
+    \end{enumerate}
+
+  \item $W$ is a subspace of $\bold{V}$
+
+    \begin{enumerate}
+
+      \item $W$ is not empty \textcolor{green}{\checkmark}
+
+      \item $W\leq \bold{V}$ \textcolor{green}{\checkmark}
+
+      \item $\overrightarrow{\bold{x}}_1=ax_1+by_1+cz_1$ and $\overrightarrow{\bold{x}}_2=ax_2+by_2+cz_2$, then $\overrightarrow{\bold{x}}_1+\overrightarrow{\bold{x}}_2=a(x_1+x_2)+b(y_1+y_2)+c(z_1+z_2)$, where $\begin{array}{c} x=x_1+x_2\\y=y_1+y_2\\z=z_1+z_2\\\end{array}$ closed under addition \textcolor{green}{\checkmark}
+
+      \item $k\overrightarrow{\bold{x}}_1=kax_1+kby_1+kcz_1$, where $\begin{array}{c} x=kx_1\\y=ky_1\\z=kz_1\\\end{array}$ closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{53}
 
-  \item
+  \item $W$ is a subspace $\bold{V}$
+
+    \begin{enumerate}
+
+      \item $W$ contains the origin $(0,0,\dots,0)$ \textcolor{green}{\checkmark}
+
+      \item $W\leq\mathbb{R}^n$ \textcolor{green}{\checkmark}
+
+      \item $A\bold{x}_1+A\bold{x}_2=\bold{0}+\bold{0}=\bold{0}$ closed under addition \textcolor{green}{\checkmark}
+
+      \item $c(A\bold{x})=cA\bold{x}=c\dot0=0$ closed under multiplication \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
 \end{enumerate}
 
