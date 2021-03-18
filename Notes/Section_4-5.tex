@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Basis and Dimension}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item $B=\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_n \right\}$ from vector space $\bold{V}$ forms basis for $\bold{V}$ if
+
+    \begin{enumerate}
+
+      \item $B$ is linearly independent
+
+      \item span$(B)=\bold{V}$
+
+      \item $\overrightarrow{\bold{v}}_i$ called basis vectors
+
+      \item Examples:
+
+        \begin{enumerate}
+
+          \item $\hat{i}$ and $\hat{j}$ are basis vectors in $\mathbb{R}^2$
+
+          \item $\hat{i}$, $\hat{j}$, and $\hat{k}$ are basis vectors in $\mathbb{R}^3$
+
+          \item $\begin{bmatrix}1 & 0\\ 0 & 0\\\end{bmatrix}$, $\begin{bmatrix} 0 & 1\\ 0 & 0 \end{bmatrix}$, $\begin{bmatrix} 0 & 0\\ 1 & 0 \end{bmatrix}$, and $\begin{bmatrix} 0 & 0\\ 0 & 1 \end{bmatrix}$ are basis vectors in $M_{2,2}$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Show $\left\{ 1,x,x^2 \right\}$ basis for $P_2$
+
+    \begin{enumerate}
+
+      \item Trivial Solution only (so it is linearly independent)
+
+      \item Spans $P_2=c_1+c_2x+c_3x^2$
+
+    \end{enumerate}
+
+  \item If $B$ is basis there is only one set of scalars $c_1,c_2,\dots,c_n$ such that $\overrightarrow{\bold{w}}=c_1\overrightarrow{\bold{v}}_1+c_2\overrightarrow{\bold{v}}_2+\dots+c_n\overrightarrow{\bold{v}}_n$
+
+  \item Dimension is the number of basis vectors:
+
+    \begin{enumerate}
+
+      \item $\mathbb{R}^n$ $-$ $n$
+
+      \item $P_n$ $-$ $n+1$
+
+      \item $M_{m,n}$ $-$ m\cdot n
+
+    \end{enumerate}
+
+  \item If $S=\left\{ \overrightarrow{\bold{v}}_1,\overrightarrow{\bold{v}}_2,\dots,\overrightarrow{\bold{v}}_n \right\}$ is basis for vector space $\bold{V}$, then every set containing more than $n$ vectors will be linearly dependent
+
+\end{itemize}
+
+\end{document}
+
