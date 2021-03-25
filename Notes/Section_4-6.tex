@@ -1,0 +1,140 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Rank of a Matrix}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item If $\bold{A}$ is an $m\times n$ matrix: $\begin{bmatrix} a_{11} & \dots & a_{1n}\\ \vdots & & \vdots\\ a_{m1} & \dots & a_{mn} \end{bmatrix}$, then row space = subspace of $\mathbb{R}^n$ spanned by rows $\overrightarrow{\bold{r}}_1, \overrightarrow{\bold{r}}_2, \dots, \overrightarrow{\bold{r}}_m$ and column space = subspace of $\mathbb{R}^m$ spanned by columns $\overrightarrow{\bold{c}}_1, \overrightarrow{\bold{c}}_2, \dots, \overrightarrow{\bold{c}}_n$
+
+    \begin{enumerate}
+
+      \item Example: $\begin{bmatrix} 1 & 0 & 1\\ 2 & 1 & 0 \end{bmatrix}$
+
+        \begin{enumerate}
+
+          \item The row space is the subspace of $\mathbb{R}^3$ spanned by $\left\{ (1,0,1), (2,1,0) \right\}$
+
+          \item The column space is the subspace of $\mathbb{R}^2$ spanned by $\left\{ (1,2), (0,1), (1,0) \right\}$
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+  \item Let dim($\bold{A}$)=dim($\bold{B}$)=$m\times n$ such that $\bold{A}$ is row equivalent to $\bold{B}$, then the row space of $\bold{A}$ = the row space of $\bold{B}$
+
+  \item If $\bold{A}$ is row equivalent to $\bold{B}$, where $\bold{B}$ is in row-echelon form, then the non-zero row vectors of $\bold{B}$ form a basis for the row space of $\bold{A}$
+
+  \item If $\bold{A}$ and $\bold{B}$ are row equivalent matrices, then a collection of columns of $\bold{A}$ are linearly independent or dependent iff corresponding columns of $\bold{B}$ are linearly independent or dependent, respectively
+
+  \item To find a basis for a row space:
+
+    \begin{itemize}
+
+      \item Reduce $\bold{A}$
+
+      \item Take non-zero rows in reduced form to create 
+
+    \end{itemize}
+
+  \item To find a basis for a column space:
+
+    \begin{enumerate}
+
+      \item Reduce $\bold{A}$ to $\bold{B}$
+
+      \item Take columns in $\bold{A}$ that correspond to identity columns in $\bold{B}$ to form a basis
+
+    \end{enumerate}
+
+  \item The dimension of the column space should equal the dimension of the row space, which is the rank of $\bold{A}$
+
+  \item If $\bold{A}$ is an $n \times n$ matrix, then the following are equivalent:
+
+    \begin{enumerate}
+
+      \item $\det(\bold{A})\neq0$
+
+      \item $\bold{A}\overrightarrow{x}=\overrightarrow{b}$ has a unique solution for any $n\times1$ column matrix $\overrightarrow{b}$
+
+      \item $\bold{A}\overrightarrow{x}=\overrightarrow{0}$ has a trivial solution only
+
+      \item $\bold{A}$ is invertible
+
+      \item $\bold{A}$ is a product of elementary matrices
+
+      \item $\bold{A}$ is row equivalent to $I_n$
+
+      \item The rank of $\bold{A}$ is $n$
+
+      \item The $n$ rows of $\bold{A}$ are linearly independent
+
+      \item The $n$ columns of $\bold{A}$ are linearly independent
+
+    \end{enumerate}
+
+  \item Null Space of a Matrix:
+
+    \begin{enumerate}
+
+      \item If $\bold{A}$ is an $m\times n$ matrix, then set of all solutions of homogeneous system of linear equations $\bold{A}\overrightarrow{x}=\overrightarrow{0}$ is a subspace of $\mathbb{R}^n$ called the null space of A. That is, $N(\bold{A})=\left\{ \overrightarrow{x}\in\mathbb{R}^n | \bold{A}\overrightarrow{x}=\overrightarrow{0} \right\}$. The dimension of the null space is the nullity of $\bold{A}$
+
+    \end{enumerate}
+
+  \item In an $m \times n$ matrix, the nullity plus the rank equals $n$
+
+\end{itemize}
+
+\end{document}
+
