@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Length and Magnitude vectors in $\mathbb{R}^n$}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item The length (norm) — Let $\overrightarrow{v}\in\mathbb{R}^n$ such that $\overrightarrow{v}=\left( v_1,v_2,\dots,v_n \right)$, then $||\overrightarrow{v}||=\sqrt{v_1^2+v_2^2+\dots+v_n^2}$
+
+  \item A unit vector in the direction of $\overrightarrow{u}$ can be found using $\frac{\overrightarrow{u}}{||\overrightarrow{u}||}$
+
+  \item Let $\overrightarrow{v}\in\mathbb{R}^n$ and $c$ be a scalar. Then $||c\overrightarrow{v}||=|c|||\overrightarrow{v}||$
+
+  \item Distance between vectors — For two vectors $\overrightarrow{u}=\left( u_1,u_2,\dots,u_n \right)$ and $\overrightarrow{v}=\left( v_1,v_2,\dots,v_n \right)$, the distance between the two is given by $\sqrt{(u_1-v_1)^2+(u_2-v_2)^2+\dots+(u_n-v_n)^2}$
+
+  \item Properties:
+
+    \begin{enumerate}
+
+      \item $d(\overrightarrow{u},\overrightarrow{v})\geq0$
+
+      \item $d(\overrightarrow{u},\overrightarrow{v})=0$ iff $\overrightarrow{u}=\overrightarrow{v}$
+
+      \item $d(\overrightarrow{u},\overrightarrow{v})=d(\overrightarrow{v},\overrightarrow{u})$
+
+    \end{enumerate}
+
+  \item Dot Product — $\overrightarrow{u}\cdot\overrightarrow{v}=u_1v_1+u_2v_2+\dots+u_nv_n$
+
+  \item Properties:
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{u}\cdot\overrightarrow{v}=\overrightarrow{v}\cdot\overrightarrow{u}$
+
+      \item $\overrightarrow{u}(\overrightarrow{v}+\overrightarrow{w})=\overrightarrow{u}\overrightarrow{v}+\overrightarrow{u}\overrightarrow{w}$
+
+      \item $c(\overrightarrow{u}\overrightarrow{v})=(c\overrightarrow{u})\overrightarrow{v}$
+
+      \item $\overrightarrow{v}\cdot\overrightarrow{v}=||\overrightarrow{v}||^2$
+
+      \item $\overrightarrow{v}\cdot\overrightarrow{v}\geq0$ or $\overrightarrow{v}\cdot\overrightarrow{v}=0$ iff $\overrightarrow{v}=0$
+
+    \end{enumerate}
+
+  \item Angle Between Vectors:
+    
+    \begin{equation*}
+      \cos(\theta)=\frac{\overrightarrow{u}\cdot\overrightarrow{v}}{||\overrightarrow{u}||||\overrightarrow{v}||},\,\,\,0\leq\theta\leq\pi
+    \label{1}
+  \end{equation}
+
+  \begin{enumerate}
+
+    \item $\overrightarrow{u}\cdot\overrightarrow{v}>0\Rightarrow 0\leq\theta\leq\pi$
+
+    \item $\overrightarrow{u}\cdot\overrightarrow{v}<0\Rightarrow \frac{\pi}{2}\leq\theta\leq\pi$
+
+    \item $\overrightarrow{u}\cdot\overrightarrow{v}=0\Rightarrow \theta=\frac{\pi}{2}$ (orthogonal)
+
+  \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
