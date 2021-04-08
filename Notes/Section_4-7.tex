@@ -58,10 +58,28 @@ citecolor=blue,
 
   \item Suppose $\overrightarrow{u}=(3,4)$ and $B=\left\{ (1,0), (0,1) \right\}$. Then you could say $\overrightarrow{u}=3(1,0)+4(0,1)$. This could be written as $[\overrightarrow{u}]_B=\begin{bmatrix} 3\\ 4 \end{bmatrix}$
 
-  \item Let the set of vectors $\left\{ \overrightarrow{v}_1,\overrightarrow{v}_2,\dots,\overrightarrow{v}_n \right\}$ be the basis for vector space $\bold{V}$, and $c_1,c_2,\dots,c_n$ be scalars, where $\overrightarrow{u} \in \bold{V}$ such that $\overrightarrow{u}=c_1\overrightarrow{v}_1+c_2\overrightarrow{v}_2+\dots+c_v\overrightarrow{v}_n$. This can be written as:
+  \item Let the set of vectors $\left\{ \overrightarrow{v}_1,\overrightarrow{v}_2,\dots,\overrightarrow{v}_n \right\}$ be the basis for vector space $\bold{V}$, and $c_1,c_2,\dots,c_n$ be scalars, where $\overrightarrow{u} \in \bold{V}$ such that $\overrightarrow{u}=c_1\overrightarrow{v}_1+c_2\overrightarrow{v}_2+\dots+c_v\overrightarrow{v}_n$. This can be written as a coordinate matrix of vector $\overrightarrow{u}$ with respect to basis $B$:
     \begin{center}
       $[\overrightarrow{u}]_B=\begin{bmatrix} c_1\\c_2\\\vdots\\c_n\end{bmatrix}$
     \end{center}
+
+  \item Change of Basis — Suppose you have basis $B=\left\{ \overrightarrow{b}_1, \overrightarrow{b}_2 \right\}$ and $C=\left\{ \overrightarrow{c}_1, \overrightarrow{c}_2 \right\}$ of vector space $V$. Then you could write $\begin{array}{c} \overrightarrow{b}_1=a\overrightarrow{c}_1+b\overrightarrow{c}_2\\ \overrightarrow{b}_2=c\overrightarrow{c}_1+d\overrightarrow{c}_2 \end{array}$, and, given $[\overrightarrow{v}]_B=\begin{bmatrix}k_1\\k_2\end{bmatrix}$, you could find $[\overrightarrow{v}]_C$ through the following method:
+
+    \begin{equation*}
+      \begin{split}
+        \overrightarrow{v}=k_1\overrightarrow{b}_1+k_2\overrightarrow{b}_2\\
+        \overrightarrow{v}=k_1(a\overrightarrow{c}_1+b\overrightarrow{c}_2)+k_2(c\overrightarrow{c}_1+d\overrightarrow{c}_2)\\
+        [\overrightarrow{v}]_c=\begin{bmatrix} ak_1+ck_2\\ bk_1+dk_2\end{bmatrix}=\begin{bmatrix} a & b\\c & d\end{bmatrix}\begin{bmatrix} k_1\\k_2\end{bmatrix}\\
+        \text{Where }P[\overrightarrow{v}]_B=\begin{bmatrix}a & b\\ c & d\end{bmatrix}\text{ is a transition matrix}
+      \end{split}
+      \label{1}
+    \end{equation}
+
+  \item For $B\rightarrow C$: $[\overrightarrow{v}]_C=P[\overrightarrow{v}]_B$
+
+  \item For $C\rightarrow B$: $[\overrightarrow{v}]_B=P[\overrightarrow{v}]_C$
+
+\end{itemize}
 
 \end{itemize}
 
