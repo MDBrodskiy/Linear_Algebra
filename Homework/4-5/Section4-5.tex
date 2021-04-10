@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 4.5 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+    \underline{Problems 1-6, 10, 13, 15, 18, 22, 23, 25, 33, 37, 41, 45, 47, 67, 73, 78, 81}
+    \end{center}
+
+  \item $\left\{ (1,0,0,0,0,0),(0,1,0,0,0,0),(0,0,1,0,0,0),(0,0,0,1,0,0),(0,0,0,0,1,0),(0,0,0,0,0,1) \right\}$
+
+  \item $\left\{ (1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1) \right\}$
+
+\item
+
+    \begin{equation*}
+      \begin{split}
+        \begin{Bmatrix}\begin{bmatrix}1&0&0\\0&0&0\\0&0&0\end{bmatrix},&\begin{bmatrix}0&1&0\\0&0&0\\0&0&0\end{bmatrix},&\begin{bmatrix}0&0&1\\0&0&0\\0&0&0\end{bmatrix},\\\begin{bmatrix}0&0&0\\1&0&0\\0&0&0\end{bmatrix},&\begin{bmatrix}0&0&0\\0&1&0\\0&0&0\end{bmatrix},&\begin{bmatrix}0&0&0\\0&0&1\\0&0&0\end{bmatrix},\\\begin{bmatrix}0&0&0\\0&0&0\\1&0&0\end{bmatrix},&\begin{bmatrix}0&0&0\\0&0&0\\0&1&0\end{bmatrix},&\begin{bmatrix}0&0&0\\0&0&0\\0&0&1\end{bmatrix}\end{Bmatrix}
+\end{split}
+\label{1}
+\end{equation}
+
+  \item $\left\{ \begin{bmatrix}1\\0\\0\\0\end{bmatrix},\begin{bmatrix}0\\1\\0\\0\end{bmatrix},\begin{bmatrix}0\\0\\1\\0\end{bmatrix},\begin{bmatrix}0\\0\\0\\1\end{bmatrix} \right\}$
+
+  \item $\left\{ 1,x,x^2,x^3,x^4 \right\}$
+
+  \item $\left\{ 1,x,x^2 \right\}$
+
+    \setcounter{enumi}{9}
+
+  \item The set does not span $\mathbb{R}^2$ so it is not a basis
+
+    \setcounter{enumi}{12}
+
+  \item It is not basis because it is linearly dependent and does not span $\mathbb{R}^2$
+
+    \setcounter{enumi}{14}
+
+  \item The set is linearly dependent, and does not span $\mathbb{R}^3$, so it is not a basis for it
+
+    \setcounter{enumi}{17}
+
+  \item The set does not span $\mathbb{R}^3$
+
+    \setcounter{enumi}{21}
+
+  \item The set is linearly dependent
+
+  \item The set is linearly dependent
+
+    \setcounter{enumi}{24}
+
+  \item The set does not span $P_2$
+
+    \setcounter{enumi}{32}
+
+  \item The set is linearly independent
+
+    \setcounter{enumi}{36}
+
+  \item Not a basis because it is linearly dependent
+
+    \setcounter{enumi}{40}
+
+  \item It is a basis for $\mathbb{R}^3$
+
+    \begin{enumerate}
+
+      \item $S$ is linearly independent \textcolor{green}{\checkmark}
+
+      \item $S$ spans $\mathbb{R}^3$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{44}
+
+  \item It is a basis for $\mathbb{R}^4$
+
+    \begin{enumerate}
+
+      \item $S$ is linearly independent \textcolor{green}{\checkmark}
+
+      \item $S$ spans $\mathbb{R}^4$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{46}
+
+  \item It is a basis for $P_3$
+
+    \begin{enumerate}
+
+      \item $\begin{vmatrix} 1 & -4 & 0 & 0\\ 0 & 0 & 2 & 5\\ -2 & 1 & 0 & 0\\ 1 & 0 & 1 & 0\\  \end{vmatrix}\neq0$ so it is linearly independent \textcolor{green}{\checkmark}
+
+      \item $S$ spans $P_3$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{66}
+
+  \item $\left\{ (0,1),(1,0) \right\},\left\{ (1,1),(0,1) \right\},\left\{ (1,1),(1,0)  \right\}$
+
+    \setcounter{enumi}{72}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $W$ forms a line
+
+      \item There is only one term, so it is a basis of itself: $\left\{ (2,1,-1) \right\}$
+
+      \item One term, so dimension = 1
+
+    \end{enumerate}
+
+    \setcounter{enumi}{77}
+
+  \item
+
+    \begin{enumerate}
+
+      \item Basis: $\left\{ (1,0,1,2)  \right\},\left\{ (4,1,0,-1)  \right\}$
+
+      \item Two terms, so dimension = 2
+
+    \end{enumerate}
+
+    \setcounter{enumi}{80}
+
+  \item
+
+    \begin{equation*}
+      \begin{split}
+        \text{If } S=\{\bold{v}_1,\bold{v}_2,\dots,\bold{v}_n\}\text{, then there exists a solution to:}\\
+        \bold{v}_1+\bold{v}_2+\dots+\bold{v}_n=0\\
+        \text{The same can be said for }S=\left\{ c\bold{v}_1,c\bold{v}_2,\dots,c\bold{v}_n \right\}\\
+        c\bold{v}_1+c\bold{v}_2+\dots+c\bold{v}_n=0\\
+        \text{Multiplying both sides by }\frac{1}{c}\text{ the following is obtained:}\\
+        \bold{v}_1+\bold{v}_2+\dots+\bold{v}_n=0\\
+        \therefore\text{ both are basis for }V
+      \end{split}
+      \label{2}
+    \end{equation}
+
+\end{enumerate}
+
+\end{document}
+
