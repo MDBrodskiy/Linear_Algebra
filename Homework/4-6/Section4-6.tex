@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 4.5 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+    \underline{Problems 3, 7, 9, 11$^*$, 17$^*$, 23, 29, 35, 39, 41, 47}
+    \end{center}
+
+    \setcounter{enumi}{2}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $(4,3,1)$, $(1,-4,0)$
+
+      \item $\begin{bmatrix} 4\\1  \end{bmatrix}$, $\begin{bmatrix} 3\\-4  \end{bmatrix}$, $\begin{bmatrix} 1\\0  \end{bmatrix}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{6}
+
+  \item $\begin{bmatrix} 1 & -3 & 2\\ 4 & 2 & 1  \end{bmatrix}\widetilde{   }\begin{bmatrix} 1 & -3 & 2\\ 0 & 14 & -7  \end{bmatrix}\widetilde{   }\begin{bmatrix} 1 & 0 & .5\\ 0 & 1 & -.5\end{bmatrix}$
+
+    \begin{enumerate}
+
+      \item $\left\{ (1, 0, .5), (0, 1, -.5) \right\}$
+
+      \item Two nonzero rows, so rank$(A)=2$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{8}
+
+  \item $\begin{bmatrix} 1 & 6 & 18\\ 7 & 40 & 116\\ -3 & -12 & -27  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 6 & 18\\ 0 & -2 & -10\\ 0 & 6 & 27\\ \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 12\\ 0 & 1 & 5\\ 0 & 0 & -3  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1  \end{bmatrix}$
+
+    \begin{enumerate}
+
+      \item $\left\{ (1,0,0),(0,1,0),(0,0,1) \right\}$
+
+      \item Three non-zero rows, so rank$(A)=3$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{10}
+
+  \item $\begin{bmatrix} -2 & -4 & 4 & 5\\ 3 & 6 -6 & -4\\ -2 & -4 & 4 & 9  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 2 & 2 & 2.5\\ 0 & 0 & 0 & 3.5\\ 0 & 0 & 0 & 4  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 2 & 2 & 0\\ 0 & 0 & 0 & 1\\ 0 & 0 & 0 & 0\end{bmatrix}$
+
+    \begin{enumerate}
+
+      \item $\left\{ (1,2,2,0),(0,0,0,1) \right\}$
+
+      \item Two non-zero rows, so rank$(A)=2$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{16}
+
+  \item $\begin{bmatrix} 2 & 9 & -2 & 53\\ -3 & 2 & 3 & -2\\ 8 & -3 & -8 & 17\\ 0 & -3 & 0 & 15 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 4.5 & -1 & 26.5\\ 0 & 15.5 & 0 & 76.5\\ 0 & -39 & 0 & 195\\ 0 & -1 & 0 & 5  \end{bmatrix}\widetilde{ }\begin{bmatrix}1 & 0 & -1 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1   \end{bmatrix}\Rightarrow\left\{ (1,0,-1,0),(0,0,1,0),(0,0,0,1) \right\}$
+
+    \setcounter{enumi}{22}
+
+  \item $\begin{bmatrix} 1 & 2 & 4\\ -1 & 2 & 1 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 2 & 4\\ 0 & 4 & 5 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 1.5\\ 0 & 1 & \frac{5}{4}  \end{bmatrix}$
+
+        \begin{enumerate}
+
+          \item $\left\{ \begin{bmatrix} 1\\0 \end{bmatrix},\begin{bmatrix} 0\\ 1\end{bmatrix} \right\}$
+
+          \item Two non-zero rows, so rank$(A)=2$
+
+        \end{enumerate}
+
+    \setcounter{enumi}{28}
+
+  \item $\begin{bmatrix} 1 & 2 & 3 & | & 0 \end{bmatrix}\Rightarrow x_1=-2s-3t, x_2=s, x_3=t\Rightarrow \left\{ \begin{bmatrix} -2\\1\\0\end{bmatrix},\begin{bmatrix} -3\\ 0\\ 1\end{bmatrix} \right\}$
+
+    \setcounter{enumi}{34}
+
+  \item $\begin{bmatrix} 5 & 2 & | & 0\\ 3 & -1 & | & 0\\ 2 & 1 & | & 0 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & | & 0\\ 0 & 1 & | & 0\\ 0 & 0 & | & 0 \end{bmatrix}\Rightarrow x_1=0,x_2=0\Rightarrow \left\{ \begin{bmatrix} 0\\0\end{bmatrix} \right\}$
+
+    \setcounter{enumi}{38}
+
+  \item $\begin{bmatrix} 2 & 6 & 3 & 1 & | & 0\\ 2 & 1 & 0 & -2 & | & 0\\ 3 & -2 & 1 & 1 & | & 0\\ 0 & 6 & 2 & 0 & | & 0\end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 3 & 1.5 & .5 & | & 0\\ 0 & -5 & -3 & -3 & | & 0\\ 0 & -11 & -3.5 & -.5 & | & 0\\ 0 & 6 & 2 & 0 & | & 0  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & .5 & .5 & | & 0\\ 0 & 1 & -1 & -3 & | & 0\\ 0 & 0 & 3 & 5 & | & 0\\ 0 & 0 & 0 & 0 & | & 0\\  \end{bmatrix}\widetilde{ }$\\
+    $\begin{bmatrix} 1 & 0 & 0 & -\frac{1}{3} & | & 0\\ 0 & 1 & 0 & -\frac{4}{3} & | & 0\\ 0 & 0 & 1 & \frac{5}{3} & | & 0\\ 0 & 0 & 0 & 0 & | & 0 \end{bmatrix} \Rightarrow x_1=\frac{1}{3}x_4,x_2=\frac{4}{3}x_4,x_3=-\frac{5}{3}x_4,x_4=0\Rightarrow \left\{ \begin{bmatrix} 0\\0\\0\\0 \end{bmatrix}\right\}$
+
+    \setcounter{enumi}{40}
+
+  \item
+
+    \begin{enumerate}
+
+      \item Three non-zero rows, so rank($A$)=3. 5 columns, so nullity = $5-3 =2$
+
+      \item $\begin{bmatrix} x_1\\x_2\\x_3\\x_4\\x_5\end{bmatrix}=s\begin{bmatrix}-3\\1\\1\\0\\0\end{bmatrix}+t\begin{bmatrix}4\\-2\\0\\2\\1\end{bmatrix}\Rightarrow\left\{ \begin{bmatrix}-3\\1\\1\\0\\0\end{bmatrix},\begin{bmatrix}4\\-2\\0\\2\\1\end{bmatrix}  \right\}$
+
+      \item Rows $r_1$, $r_2$, and $r_3\Rightarrow\left\{ (1,0,3,0,-4),(0,1,-1,0,2),(0,0,0,1,-2) \right\}$
+
+      \item Columns $a_1$, $a_2$, and $a_4$, so: $\left\{ \begin{bmatrix} 1\\2\\3\\4  \end{bmatrix},\begin{bmatrix}2\\5\\7\\9 \end{bmatrix},\begin{bmatrix}0\\1\\2\\-1 \end{bmatrix} \right\}$
+
+      \item According to (b), it is linearly dependent
+
+      \item
+
+        \begin{enumerate}
+
+          \item $\begin{vmatrix}1&0&0\\0&1&0\\0&0&1\end{vmatrix}=1$, so it is linearly independent
+
+          \item $\begin{bmatrix} 1&0&3\\0&1&-1\\0&0&0\end{bmatrix}\Rightarrow\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}=t\begin{bmatrix}-3\\1\\1\end{bmatrix}$, so linearly dependent
+
+        \item $\begin{vmatrix}1&0&-4\\0&1&2\\0 & 0 & -2\\\end{vmatrix}\Rightarrow\begin{vmatrix}1 & 0 & 0\\ 0 & 1 & 0\\0 & 0 & -2\end{vmatrix}=-2$, so it is linearly independent
+
+        \end{enumerate}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{46}
+
+  \item $\begin{bmatrix} 9 & -4 & -2 & -20\\ 12 & -6 & -4 & -29\\ 3 & -2 & 0 & -7\\ 3 & -2 & -1 & -8  \end{bmatrix}\widetilde{ }\begin{bmatrix} 3 & 0 & 0 & -4\\ 0 & 2 & 0 & 3\\ 0 & 0 & 1 & 1\\ 3 & -2 & -1 & -8  \end{bmatrix}\widetilde{ }\begin{bmatrix} 3 & 0 & 0 & -4\\ 0 & 2 & 0 & 3\\ 0 & 0 & 1 & 1\\ 0 & 0 & 0 & 0  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 0 & -\frac{4}{3}\\ 0 & 1 & 0 & \frac{3}{2}\\ 0 & 0 & 1 & 1\\ 0 & 0 & 0 & 0 \end{bmatrix}\Rightarrow\begin{bmatrix}x_1\\x_2\\x_3\\x_4\end{bmatrix}=t\begin{bmatrix}\frac{4}{3}\\-\frac{3}{2}\\-1\\1\end{bmatrix}$
+
+    \begin{enumerate}
+
+      \item $\left\{ \left( \frac{4}{3},-\frac{3}{2},-1,1 \right) \right\}$
+
+      \item One solution term, so dim$=1$
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
