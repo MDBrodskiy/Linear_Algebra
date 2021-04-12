@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 4.7 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+    \underline{Problems 3, 9, 11, 13, 17, 19, 21, 23, 35, 37, 43, 45, 51}
+    \end{center}
+
+    \setcounter{enumi}{2}
+
+  \item $\begin{bmatrix}7\\-4\\-1\\2 \end{bmatrix}$
+
+    \setcounter{enumi}{8}
+
+  \item $\begin{bmatrix} -1(1)\\ 3(1)-1(1)\\ -2(1)+3(1)-1(1)\\ 1(1)-2(1)+3(1)-1(1)  \end{bmatrix}=\begin{bmatrix}-1\\2\\0\\1\end{bmatrix}$
+
+    \setcounter{enumi}{10}
+
+  \item $\begin{bmatrix} 3\\2\end{bmatrix}$
+
+    \setcounter{enumi}{12}
+
+  \item  $\left[ \begin{array}{ccc|ccc} 8 & 7 & 1 & 1 & 0 & 0\\ 11 & 0 & 4 & 0 & 1 & 0\\ 0 & 10 & 6 & 0 & 0 & 1  \end{array} \right]\widetilde{ }\left[ \begin{array}{ccc|ccc} 1 & \frac{7}{8} & \frac{1}{8} & \frac{1}{8} & 0 & 0\\ 0 & -\frac{77}{8} & \frac{21}{8} & -\frac{11}{8} & 1 & 0\\ 0 & 10 & 6 & 0 & 0 & 1  \end{array} \right]\widetilde{ }\left[ \begin{array}{ccc|ccc} 1 & \frac{7}{8} & \frac{1}{8} & \frac{1}{8} & 0 & 0\\ 0 & 1 & -\frac{21}{77} & \frac{1}{7} & -\frac{8}{77} & 0\\ 0 & 0 & \frac{96}{11} & -\frac{10}{7} & \frac{80}{77} & 1  \end{array} \right]\widetilde{ }$\\
+    $\left[ \begin{array}{ccc|ccc} 1 & 0 & \frac{4}{11} & 0 & \frac{1}{11} & 0\\ 0 & 1 & -\frac{21}{77} & \frac{1}{7} & -\frac{8}{77} & 0\\ 0 & 0 & 1 & -\frac{55}{336} & \frac{5}{42} & \frac{11}{96}  \end{array} \right]\widetilde{ }\left[ \begin{array}{ccc|ccc} 1 & 0 & 0 & \frac{5}{84} & \frac{1}{21} & -\frac{1}{24}\\ 0 & 1 & 0 & \frac{11}{112} & -\frac{1}{14} & \frac{1}{32}\\ 0 & 0 & 1 & -\frac{55}{336} & \frac{5}{42} & \frac{11}{96}  \end{array} \right]\Rightarrow\begin{bmatrix}\frac{5}{84} & \frac{1}{21} & -\frac{1}{24}\\ \frac{11}{112} & -\frac{1}{14} & \frac{1}{32}\\ -\frac{55}{336} & \frac{5}{42} & \frac{11}{96} \end{bmatrix}\begin{bmatrix} 3\\19\\2  \end{bmatrix}=\begin{bmatrix} 1\\-1\\2 \end{bmatrix}$
+
+    \setcounter{enumi}{16}
+
+  \item $\begin{bmatrix} 2 & 1 & 1 & 0\\ 4 & 3 & 0 & 1  \end{bmatrix}\widetilde{ }\begin{bmatrix} 2 & 1 & 1 & 0\\ 0 & 1 & -2 & 1  \end{bmatrix}\widetilde{ }\begin{bmatrix} 2 & 0 & 3 & -1\\ 0 & 1 & -2 & 1  \end{bmatrix}\begin{bmatrix} 1 & 0 & 1.5 & -.5\\ 0 & 1 & 2 & 1\end{bmatrix}\Rightarrow\begin{bmatrix} 1.5 & -.5\\ -2 & 1\end{bmatrix}$
+
+    \setcounter{enumi}{18}
+
+  \item $\begin{bmatrix} 1 & 0 & 2 & -1\\ 0 & 1 & 4 & 3  \end{bmatrix}\Rightarrow\begin{bmatrix} 2 & -1\\ 4 & 3\end{bmatrix}$
+
+    \setcounter{enumi}{20}
+
+  \item $\begin{bmatrix} 0 & 1 & 5 & -1 & 0 & 0\\ 0 & 4 & 0 & 0 & 1 & 0\\ 2 & 0 & 2 & 0 & 0 & -1  \end{bmatrix}\widetilde{ }\begin{bmatrix} 0 & 0 & 5 & -1 & -\frac{1}{4} & 0\\ 0 & 1 & 0 & 0 & \frac{1}{4} & 0\\ 2 & 0 & 2 & 0 & 0 & -1  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 0 & \frac{1}{5} & \frac{1}{20} & -\frac{1}{2}\\ 0 & 1 & 0 & 0 & \frac{1}{4} & 0\\ 0 & 0 & 1 & -\frac{1}{5} & -\frac{1}{20} & 0  \end{bmatrix}\Rightarrow\begin{bmatrix} \frac{1}{5} & \frac{1}{20} & -\frac{1}{2}\\ 0 & \frac{1}{4} & 0\\ -\frac{1}{5} & -\frac{1}{20} & 0 \end{bmatrix}$
+
+    \setcounter{enumi}{22}
+
+  \item $\begin{bmatrix} 1 & 0 & 0 & 3 & -2 & 1\\ 0 & 1 & 0 & 4 & -1 & 0\\ 0 & 0 & 1 & 0 & 1 & -3  \end{bmatrix}\Rightarrow\begin{bmatrix} 3 & -2 & 1\\ 4 & -1 & 0\\ 0 & 1 & -3\end{bmatrix}$
+
+    \setcounter{enumi}{34}
+
+  \item $P=\begin{bmatrix} 1 & -\frac{3}{11} & \frac{5}{11} & 0 & -\frac{7}{11}\\0 & -\frac{2}{11} & \frac{3}{22} & 0 & -\frac{1}{11}\\ -\frac{5}{4} & \frac{9}{22} & -\frac{19}{44} & -\frac{1}{4} & \frac{21}{22}\\ -\frac{3}{4} & \frac{1}{2} & -\frac{1}{4} & \frac{1}{4} & \frac{1}{2}\\ 0 & -\frac{1}{11} & -\frac{2}{11} & 0 & \frac{5}{11}  \end{bmatrix}$
+
+    \setcounter{enumi}{36}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} -12 & -4 & 1 & -2\\ 0 & 4 & 3 & -2  \end{bmatrix}\widetilde{ }\begin{bmatrix} -12 & 0 & 4 & -4\\ 0 & 1 & \frac{3}{4} & -\frac{1}{2}  \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & -\frac{1}{3} & \frac{1}{3}\\ 0 & 1 & \frac{3}{4} & -\frac{1}{2}  \end{bmatrix}\Rightarrow\begin{bmatrix} -\frac{1}{3} & \frac{1}{3}\\ \frac{3}{4} & -\frac{1}{2}\end{bmatrix}$
+
+      \item $\begin{bmatrix} 1 & -2 & -12 & -4\\ 3 & -2 & 0 & 4 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & -2 & -12 & -4\\ 0 & 4 & 36 & 16 \end{bmatrix}\widetilde{ }\begin{bmatrix} 1 & 0 & 6 & 4\\ 0 & 1 & 9 & 4 \end{bmatrix}\Rightarrow\begin{bmatrix} 6 & 4\\ 9 & 4\end{bmatrix}$
+
+      \item $\begin{bmatrix} -\frac{1}{3} & \frac{1}{3}\\ \frac{3}{4} & -\frac{1}{2} \end{bmatrix}\begin{bmatrix} 6 & 4\\ 9 & 4\end{bmatrix}=\begin{bmatrix} 1 & 0\\ 0 & 1\end{bmatrix}$ \textcolor{green}{\checkmark}
+
+      \item $\begin{bmatrix} 6 & 4\\ 9 & 4\end{bmatrix}\begin{bmatrix} -1\\3\end{bmatrix}=\begin{bmatrix} 6\\3\end{bmatrix}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{42}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} \frac{19}{39} & -\frac{9}{13} & \frac{44}{39}\\ -\frac{3}{13} & -\frac{6}{13} & -\frac{9}{13}\\ -\frac{23}{39} & \frac{2}{13} & -\frac{4}{39}  \end{bmatrix}$
+
+      \item $\begin{bmatrix} -\frac{2}{7} & -\frac{4}{21} & -\frac{13}{7}\\ -\frac{5}{7} & -\frac{8}{7} & -\frac{1}{7}\\ \frac{4}{7} & -\frac{13}{21} & \frac{5}{7}  \end{bmatrix}$
+
+      \item $\begin{bmatrix} \frac{19}{39} & -\frac{9}{13} & \frac{44}{39}\\ -\frac{3}{13} & -\frac{6}{13} & -\frac{9}{13}\\ -\frac{23}{39} & \frac{2}{13} & -\frac{4}{39}  \end{bmatrix}\begin{bmatrix} -\frac{2}{7} & -\frac{4}{21} & -\frac{13}{7}\\ -\frac{5}{7} & -\frac{8}{7} & -\frac{1}{7}\\ \frac{4}{7} & -\frac{13}{21} & \frac{5}{7}  \end{bmatrix}=I$ \textcolor{green}{\checkmark}
+
+      \item $\begin{bmatrix} \frac{22}{7}\\ \frac{6}{7}\\ \frac{19}{7} \end{bmatrix}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{44}
+
+  \item $\begin{bmatrix} 1\\5\\-2\\1  \end{bmatrix}$
+
+    \setcounter{enumi}{50}
+
+  \item $\begin{bmatrix} 1 \\  2 \\ -1 \end{bmatrix}$
+
+\end{enumerate}
+
+\end{document}
+
