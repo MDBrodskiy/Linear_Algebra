@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Gram-Schmidt Orthonormalization Process}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Orthogonal if $\langle\overrightarrow{u},\overrightarrow{v}\rangle=0$
+
+  \item Orthonormal if $\langle\overrightarrow{u},\overrightarrow{v}\rangle$ and $\langle\overrightarrow{v},\overrightarrow{v}\rangle=1$
+
+  \item The Gram-Schmidt Process — Given basis $B=\left\{ \overrightarrow{v}_1,\overrightarrow{v}_2,\dots,\overrightarrow{v}_n \right\}$
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{w}_1=\overrightarrow{v}_1$
+
+      \item $\overrightarrow{w}_2=\overrightarrow{v}_2-\frac{\langle\overrightarrow{v}_2,\overrightarrow{w}_1\rangle}{\langle\overrightarrow{w}_1,\overrightarrow{w}_1\rangle}\overrightarrow{w}_1$
+
+      \item $\vdots$
+
+      \item $\overrightarrow{w}_n=\overrightarrow{v}_n-\frac{\langle\overrightarrow{v}_n,\overrightarrow{w}_1\rangle}{\langle\overrightarrow{w}_1,\overrightarrow{w}_1\rangle}\overrightarrow{w}_1-\frac{\langle\overrightarrow{v}_n,\overrightarrow{w}_2\rangle}{\langle\overrightarrow{w}_2,\overrightarrow{w}_2\rangle}\overrightarrow{w}_2-\dots-\frac{\langle\overrightarrow{v}_n,\overrightarrow{w}_{n-1}\rangle}{\langle\overrightarrow{w}_{n-1},\overrightarrow{w}_{n-1}\rangle}\overrightarrow{w}_{n-1}$
+
+    \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
