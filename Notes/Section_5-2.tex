@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Inner Product Spaces}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Let $\overrightarrow{u}$, $\overrightarrow{v}$, and $\overrightarrow{w}$ be vectors in vector space $V$, and $c$ is a scalar. The Inner Product on $V$ is a function that associates a real number $\langle \overrightarrow{u},\overrightarrow{v}\rangle$ with each pair of vectors $\overrightarrow{u}$ and $\overrightarrow{v}$ and satisfies the following axioms:
+
+    \begin{enumerate}
+
+      \item $\langle\overrightarrow{u},\overrightarrow{v}\rangle=\langle\overrightarrow{v},\overrightarrow{u}\rangle$
+
+      \item $\langle\overrightarrow{u},\overrightarrow{v}+\overrightarrow{w}\rangle=\langle\overrightarrow{u},\overrightarrow{v}\rangle + \langle\overrightarrow{u},\overrightarrow{w}\rangle$
+
+      \item $c\langle\overrightarrow{u},\overrightarrow{v}\rangle=\langle c\overrightarrow{u},\overrightarrow{v}\rangle$
+
+      \item $\langle \overrightarrow{v},\overrightarrow{v}\rangle\geq0$ and $\langle\overrightarrow{v},\overrightarrow{v}\rangle=0$ iff $\overrightarrow{v}=0$
+
+    \end{enumerate}
+
+  \item A vector space $V$ with an inner product is an inner product space
+
+  \item The dot product is the standard inner product
+
+  \item Standard Inner Products:
+
+    \begin{enumerate}
+
+      \item $\mathbb{R}^n$: $\langle\overrightarrow{u},\overrightarrow{v}\rangle=\overrightarrow{u}_1\overrightarrow{v}_1+\overrightarrow{u}_2\overrightarrow{v}_2+\dots+\overrightarrow{u}_n\overrightarrow{v}_n$
+
+      \item $P_n$: $\langle\overrightarrow{u},\overrightarrow{v}\rangle=a_0b_0+a_1b_1x+\dots+a_nb_nx^n$
+
+      \item $M_{2,2}$: $\langle\bold{A},\bold{B}\rangle=a_{11}b_{11}+a_{12}b_{12}+a_{21}b_{21}+a_{22}b_{22}$
+
+    \end{enumerate}
+
+  \item On $[a,b]$: $\langle \overrightarrow{f},\overrightarrow{g}\rangle=\int_a^b f(x)g(x)\,dx$
+
+  \item Properties:
+
+    \begin{enumerate}
+
+      \item $(1)\langle\overrightarrow{u},\overrightarrow{v}\rangle=\langle\overrightarrow{u},\overrightarrow{v}\rangle$
+
+      \item $\langle\overrightarrow{u},\overrightarrow{v}+\overrightarrow{w}\rangle=\langle\overrightarrow{u},\overrightarrow{w}\rangle+ \langle\overrightarrow{u},\overrightarrow{v}\rangle$
+
+      \item $\langle\overrightarrow{u},0\rangle=0$
+
+    \end{enumerate}
+
+  \item Norm or Distance
+
+    \begin{enumerate}
+
+      \item $||\overrightarrow{u}||=\sqrt{\langle\overrightarrow{u},\overrightarrow{u}\rangle}$
+
+      \item $d\langle\overrightarrow{u},\overrightarrow{v}\rangle=||\overrightarrow{u}-\overrightarrow{v}||$
+
+    \end{enumerate}
+
+  \item Angle Between Vectors:
+
+    \begin{enumerate}
+
+      \item $\cos(\theta)=\frac{\langle\overrightarrow{u},\overrightarrow{v}\rangle}{||\overrightarrow{u}||||\overrightarrow{v}||},\,\,\,\,\,0\leq\theta\leq\pi$
+
+    \end{enumerate}
+
+  \item $\overrightarrow{u}$ and $\overrightarrow{v}$ are orthogonal iff $\langle\overrightarrow{u},\overrightarrow{v}\rangle=0$
+
+  \item The projection of $\overrightarrow{u}$ onto $\overrightarrow{v}$, or proj$_{\overrightarrow{v}}\overrightarrow{u}=\frac{\langle\overrightarrow{u},\overrightarrow{v}\rangle}{\langle\overrightarrow{v},\overrightarrow{v}\rangle}\overrightarrow{v}=\frac{\langle\overrightarrow{u},\overrightarrow{v}\rangle}{||\overrightarrow{v}||}\overrightarrow{v}$
+
+\end{itemize}
+
+\end{document}
+
