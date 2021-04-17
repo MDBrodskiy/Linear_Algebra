@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 5.1 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+      \underline{Problems 1, 5, 9, 13, 17, 18, 21, 25, 27, 33, 41, 45, 49, 53, 57, 67, 71, 73, 77, 83, 84}
+    \end{center}
+
+  \item $\sqrt{3^2+4^2}=5$
+
+    \setcounter{enumi}{4}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\sqrt{\left( -1 \right)^2 + \left( \frac{1}{4} \right)^2}=\frac{\sqrt{17}}{4}$
+
+      \item $\sqrt{\left( 4 \right)^2+\left( -\frac{1}{8} \right)^2}=\sqrt{\frac{1025}{64}}=\frac{5\sqrt{41}}{8}$
+
+      \item $\sqrt{\left( -1+4 \right)^2+\left( \frac{1}{8} \right)^2}=\sqrt{\frac{577}{64}}=\frac{\sqrt{577}}{8}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{8}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $||\overrightarrow{u}||=13\Rightarrow\langle-\frac{5}{13},\frac{12}{13}\rangle$; $\left( -\frac{5}{13} \right)^2+\left( \frac{12}{13} \right)^2=1$
+
+      \item Opposite Direction: $-\langle-\frac{5}{13},\frac{12}{13}\rangle=\langle\frac{5}{13},-\frac{12}{13}\rangle$; $\left( \frac{5}{13} \right)^2+\left( -\frac{12}{13} \right)^2=1$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{12}
+
+  \item $4\left( \langle1,1\rangle \right)\cdot\frac{1}{||\overrightarrow{u}||}=\langle2\sqrt{2},2\sqrt{2}\rangle$
+
+    \setcounter{enumi}{16}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\frac{1}{2}\overrightarrow{v}=\langle-\frac{1}{2},\frac{3}{2}, 0, 2\rangle$
+
+      \item $-2\overrightarrow{v}=\langle2,-6,0,-8\rangle$
+
+    \end{enumerate}
+
+  \item $\sqrt{(c)^2+(2c)^2+(3c)^2}=1\Rightarrow c\sqrt{14}=\pm1\Rightarrow c=\frac{\sqrt{14}}{14}$
+
+    \setcounter{enumi}{20}
+
+  \item $\sqrt{(1-(-1))^2+(4-2)^2+(1-0)^2}=3$
+
+    \setcounter{enumi}{24}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\overrightarrow{u}\cdot\overrightarrow{v}=2(2)+(-1)(-2)+(-6)=0$
+
+      \item $\overrightarrow{v}\cdot\overrightarrow{v}=(2)^2+(-1)^2+(-6)^2=41$
+
+      \item $\left( \sqrt{(2)^2+(-2)^2+(1)^2 \right)^2=9$
+
+      \item $(\overrightarrow{u}\cdot\overrightarrow{v})\overrightarrow{v}=\langle0,0\rangle$
+
+      \item $\overrightarrow{u}\cdot(5\overrightarrow{v}}=5(\overrightarrow{u}\cdot\overrightarrow{v})=5(0)=0$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{26}
+
+  \item $(\overrightarrow{u}+\overrightarrow{v})\cdot(2\overrightarrow{u}-\overrightarrow{v})\Rightarrow2(\overrightarrow{u}\cdot\overrightarrow{u})-\overrightarrow{u}\cdot\overrightarrow{v}+2(\overrightarrow{u}\cdot\overrightarrow{v})-\overrightarrow{v}\cdot\overrightarrow{v}=2(4)-(-5)+2(-5)-(10)=-7$
+
+    \setcounter{enumi}{32}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $||\overrightarrow{u}||\approx3.464$; $||\overrightarrow{v}||\approx3.317$
+
+      \item $\langle-.603,.426,-.522,-.426\rangle$
+
+      \item $\langle-.577,-.5,-.408,-.5\rangle$
+
+      \item $-6.45$
+
+      \item $12$
+
+      \item $11$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{40}
+
+  \item $\theta=\cos^{-1}\left( \frac{\overrightarrow{u}\cdot\overrightarrow{v}}{||\overrightarrow{u}||||\overrightarrow{v}||} \right)$; $\overrightarrow{u}\cdot\overrightarrow{v}=\left( \frac{\sqrt{3}}{2} \right)\left( -\frac{\sqrt{2}}{2} \right)+\left( \frac{1}{2} \right)\left( \frac{\sqrt{2}}{2} \right)=\frac{-\sqrt{6}+\sqrt{2}}{4}$; $||\overrightarrow{u}||=\frac{5}{4}, ||\overrightarrow{v}||=\frac{3}{4}$; $\theta=106^{\circ}$
+
+    \setcounter{enumi}{44}
+
+  \item $||\overrightarrow{u}||=\sqrt{2}$, $||\overrightarrow{v}||=6$; $\overrightarrow{u}\cdot\overrightarrow{v}=6\Rightarrow\theta=\cos^{-1}\left( \frac{6}{6\sqrt{2}} \right)=45^{\circ}$
+
+    \setcounter{enumi}{48}
+
+  \item $-\frac{1}{3}(2)+\frac{2}{3}(-4)=-\frac{10}{3}\Rightarrow ||\overrightarrow{u}||=\frac{\sqrt{5}}{3}, ||\overrightarrow{v}||=2\sqrt{5}\Rightarrow\cos^{-1}(-1)=\pi$, so parallel
+
+    \setcounter{enumi}{52}
+
+  \item $\frac{1}{4}(-2)-\frac{5}{4}(5)=-\frac{27}{4}\Rightarrow ||\overrightarrow{u}||=\sqrt{30}, ||\overrightarrow{v}||=\sqrt{\frac{21}{8}}$, so neither
+
+    \setcounter{enumi}{56}
+
+  \item $2a-b+c=0\Rightarrow b=s, c=t\Rightarrow \langle \frac{s-t}{2},s,t\rangle$
+
+    \setcounter{enumi}{66}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix}3 & 4 \end{bmatrix}\begin{bmatrix}2\\-3 \end{bmatrix}=-6$
+
+      \item $\begin{bmatrix} 2 & -3 \end{bmatrix} \begin{bmatrix} 2\\-3  \end{bmatrix}=13$
+
+      \item $\begin{bmatrix} 3 & 4  \end{bmatrix} \begin{bmatrix} 3\\4  \end{bmatrix}=25$
+
+      \item $\left(\begin{bmatrix}3 & 4 \end{bmatrix}\begin{bmatrix}2\\-3 \end{bmatrix}\right)\begin{bmatrix} 2 & -3\end{bmatrix}=\begin{bmatrix} -12 & 18 \end{bmatrix}$
+
+      \item $\begin{bmatrix}3 & 4 \end{bmatrix}\left(5\begin{bmatrix}2\\-3 \end{bmatrix}\right)=5\left(\begin{bmatrix}3 & 4 \end{bmatrix}\begin{bmatrix}2\\-3 \end{bmatrix}\right)=-30$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{70}
+
+  \item $\overrightarrow{u}\cdot\overrightarrow{v}=(\cos\theta)(\sin\theta)+(\sin\theta)(-\cos\theta)=0$, so the two are orthogonal
+
+    \setcounter{enumi}{72}
+
+  \item
+
+    \begin{enumerate}
+
+      \item False. The norm is defined as the square root of the sum of all components squared.
+
+      \item False. The dot product always becomes a scalar.
+
+    \end{enumerate}
+
+    \setcounter{enumi}{76}
+
+  \item $v_1v_2+(v_2)(-v_1)=0$; $||\overrightarrow{v}||=13\Rightarrow\langle-\frac{12}{13},\frac{5}{13}\rangle,\langle\frac{12}{13},-\frac{5}{13}\rangle$
+
+    \setcounter{enumi}{82}
+
+  \item $\overrightarrow{u}\cdot(c\overrightarrow{v}+d\overrightarrow{w})=c(\overrightarrow{u}\cdot\overrightarrow{v})+d(\overrightarrow{u}\cdot\overrightarrow{w})=c(0)+d(0)=0$, so it is orthogonal
+
+  \item $\overrightarrow{u}\cdot\overrightarrow{v}=\frac{1}{4}||\overrightarrow{u}+\overrightarrow{v}||^2-\frac{1}{4}||\overrightarrow{u}-\overrightarrow{v}||^2\Rightarrow \frac{1}{4}(\cancel{||\overrightarrow{u}||^2}+2(\overrightarrow{u}\cdot\overrightarrow{v})+\cancel{||\overrightarrow{v}||^2}\cancel{-||\overrightarrow{u}||^2}+2(\overrightarrow{u}\cdot\overrightarrow{v})\cancel{-||\overrightarrow{v}||^2})=\frac{1}{4}(4\overrightarrow{u}\cdot\overrightarrow{v})=\overrightarrow{u}\cdot\overrightarrow{v}\textcolor{green}{\checkmark}$
+
+\end{enumerate}
+
+\end{document}
+
