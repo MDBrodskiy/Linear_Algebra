@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\xmark}{\ding{55}}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
+\usepackage[super]{nth}
+\usepackage{expl3}
+\usepackage[version=4]{mhchem}
+\usepackage{hpstatement}
+\usepackage{rsphrase}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{multicol}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Algebra 5.2 Homework}
+\date{}
+\author{Michael Brodskiy\\ \small Instructor: Prof. Knight}
+
+\begin{document}
+
+\maketitle
+
+\begin{enumerate}
+
+    \begin{center}
+      \underline{Problems 1, 8, 9, 11, 13, 15, 17, 23, 24, 29, 33, 36, 39, 41, 43, 45, 47, 49, 50, 51, 65,}\\\underline{ 67, 75, 79, 85}
+    \end{center}
+
+  \item This does define an inner product
+
+    \begin{enumerate}
+
+      \item $(\overrightarrow{u},\overrightarrow{v})=3u_1v_1+u_2v_2=3v_1u_1+v_2u_2=(\overrightarrow{v},\overrightarrow{u})$ \textcolor{green}{\checkmark}
+
+      \item $(\overrightarrow{u},\overrightarrow{v}+\overrightarrow{w})=3u_1(v_1+w_1)+u_2(v_2+w_2)=3u_1v_1+3u_1w_1+u_2v_2+u_2w_2=(\overrightarrow{u},\overrightarrow{v})+(\overrightarrow{u},\overrightarrow{w})$ \textcolor{green}{\checkmark}
+
+      \item $c(\overrightarrow{u},\overrightarrow{v})=c(3u_1v_1+u_2v_2)=3cu_1v_1+cu_2v_2=(c\overrightarrow{u},\overrightarrow{v})$ \textcolor{green}{\checkmark}
+
+      \item $(\overrightarrow{v},\overrightarrow{v})=3(v_1)^2+(v_2)^2$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+    \setcounter{enumi}{7}
+
+  \item This does define an inner product
+
+    \begin{enumerate}
+
+      \item $(\overrightarrow{u},\overrightarrow{v})=\frac{1}{2}u_1v_1+\frac{1}{4}u_2v_2+\frac{1}{2}u_3v_3=\frac{1}{2}v_1u_1+\frac{1}{4}v_2u_2+\frac{1}{2}v_3u_3=(\overrightarrow{v},\overrightarrow{u})$ \textcolor{green}{\checkmark}
+
+      \item $(\overrightarrow{u},\overrightarrow{v}+\overrightarrow{w})=\frac{1}{2}u_1(v_1+w_1)+\frac{1}{4}u_2(v_2+w_2)+\frac{1}{2}u_3(v_3+w_3)=\frac{1}{2}u_1v_1+\frac{1}{2}u_1w_1+\frac{1}{4}u_2v_2+\frac{1}{4}u_2w_2+\frac{1}{2}u_3v_3+\frac{1}{2}u_3w_3=(\overrightarrow{u},\overrightarrow{v})+(\overrightarrow{u},\overrightarrow{w})$ \textcolor{green}{\checkmark}
+
+      \item $c(\overrightarrow{u},\overrightarrow{v})=c(\frac{1}{2}u_1v_1+\frac{1}{4}u_2v_2+\frac{1}{2}u_3v_3)=\frac{1}{2}cu_1v_1+\frac{1}{4}cu_2v_2+\frac{1}{2}cu_3v_3=(c\overrightarrow{u},\overrightarrow{v})$ \textcolor{green}{\checkmark}
+
+      \item $(\overrightarrow{v},\overrightarrow{v})=\frac{1}{2}(v_1)^2+\frac{1}{4}(v_2)^2+\frac{1}{2}(v_3)^2$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
+
+  \item This does \underline{not} define an inner product because it fails axiom 4, which states that the inner product of $\overrightarrow{v}$ with itself only equals zero if $\overrightarrow{v}$ itself is zero. This is not true, as, for $\overrightarrow{v}=\langle0, c\rangle$, the function fails the axiom.
+
+    \setcounter{enumi}{10}
+
+  \item This does \underline{not} define an inner product, as it fails axiom 4. This is because, for any vector $\overrightarrow{v}$ where $v_1=v_2$, the vector equals zero, which fails axiom 4.
+
+    \setcounter{enumi}{12}
+
+  \item This does \underline{not} define an inner product, as it fails axiom 1. This is because, for any $\overrightarrow{v}=\langle 0,0,c\rangle$, this fails, as $(\overrightarrow{u},\overrightarrow{v})=-u_1u_2u_3$, but $(\overrightarrow{v},\overrightarrow{u})=0$
+
+    \setcounter{enumi}{14}
+
+  \item This does \underline{not} define an inner product, as it fails axiom 3. This is because $c(\overrightarrow{u},\overrightarrow{v})=c( (u_1v_1)^2+(u_2v_2)^2+(u_3v_3)^2)$, but $(c\overrightarrow{u},\overrightarrow{v})=c^2u_1^2v_1^2+c^2u_2^2v_2^2+c^2u_3^2v_3^2$
+
+    \setcounter{enumi}{16}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $3(5)+4(-12)=-33$
+
+      \item $\sqrt{3^2+4^2}=5$
+
+      \item $\sqrt{5^2+(-12)^2}=13$
+
+      \item $\sqrt{(-2)^2+(16)^2}=2\sqrt{65}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{22}
+
+  \item
+
+  \item
+
+    \setcounter{enumi}{28}
+
+  \item
+
+    \setcounter{enumi}{32}
+
+  \item
+
+    \setcounter{enumi}{35}
+
+  \item
+
+    \setcounter{enumi}{38}
+
+  \item
+
+    \setcounter{enumi}{40}
+
+  \item
+
+    \setcounter{enumi}{42}
+
+  \item
+
+    \setcounter{enumi}{44}
+
+  \item
+
+    \setcounter{enumi}{46}
+
+  \item
+
+    \setcounter{enumi}{48}
+
+  \item
+
+  \item
+
+  \item
+
+    \setcounter{enumi}{64}
+
+  \item
+
+    \setcounter{enumi}{66}
+
+  \item
+
+    \setcounter{enumi}{74}
+
+  \item
+
+    \setcounter{enumi}{78}
+
+  \item
+
+    \setcounter{enumi}{84}
+
+  \item
+
+\end{enumerate}
+
+\end{document}
+
