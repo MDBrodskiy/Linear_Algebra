@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Linear Transformations}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item $T: V\rightarrow W$
+
+  \item Ex. $T(\overrightarrow{v})=(x+y,y+z)$, $\overrightarrow{v}=(1,2,3)$. In this case, $T(\overrightarrow{v}=(1+2,2+3)\rightarrow(3,5)$
+
+    \item $T(\overrightarrow{u}+\overrightarrow{v})=T(\overrightarrow{u})+T(\overrightarrow{v})$
+
+    \item $T:V\rightarrow W$ is called a linear transformation if:
+
+      \begin{enumerate}
+
+        \item $T(\overrightarrow{u}+\overrightarrow{v})=T(\overrightarrow{u})+T(\overrightarrow{v})\,\,\forall \overrightarrow{u},\overrightarrow{v}\in V$
+
+        \item $T(c\overrightarrow{u}=cT(\overrightarrow{u})\,\,\forall c$
+
+      \end{enumerate}
+
+      \item Matrix Transformation — $T(\overrightarrow{v})=A\overrightarrow{v}$, where $A$ is an $m\times n$ matrix, and $\overrightarrow{v}=n\times1$ and $T: \mathbb{R}^n\rightarrow\mathbb{R}^m$
+
+      \item Linear Operator: $T: \overrightarrow{v}\rightarrow\overrightarrow{v}$
+
+      \item Differential Operator: $C'[a,b]=$ set of all functions whose derivatives are continuous on $[a,b]$. $D_x\cdot C'[a,b]\rightarrow C[a,b]$. $D_x(f)=\frac{d}{dx}(f),\,\,f\in C'[a,b]$
+
+      \item Properties of Linear Transformations:
+
+        \begin{enumerate}
+
+          \item $T(\overrightarrow{0})=\overrightarrow{0}$
+
+          \item $T(-\overrightarrow{u})=-T(\overrightarrow{u})$
+
+          \item $T(\overrightarrow{u}-\overrightarrow{v})=T(\overrightarrow{u})-T(\overrightarrow{v})$
+
+          \item If $\overrightarrow{v}=c_1\overrightarrow{v}_1+c_2\overrightarrow{v}_2+\dots+c_n\overrightarrow{v}_n$, then $T(\overrightarrow{v})=T(c_1\overrightarrow{v}_1+c_2\overrightarrow{v}_2+\dots+c_n\overrightarrow{v}_n)=c_1T(\overrightarrow{v}_1)+c_2T(\overrightarrow{v}_2)+\dots+c_nT(\overrightarrow{v}_n)$
+
+        \end{enumerate}
+
+\end{itemize}
+
+\end{document}
+
