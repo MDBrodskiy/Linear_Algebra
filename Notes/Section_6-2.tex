@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Kernel and Range}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Let $T:\,V\rightarrow W$ be a linear transformation. Then the set of all vectors $\overrightarrow{v}$ in $V$ that satisfy $T(\overrightarrow{v})=\bold{0}$ is the kernel of $T$ and is denoted by ker$(T)$ or ker$(T)=\left\{ \overrightarrow{v}\in V\, \Big| \, T(\overrightarrow{v})=\bold{0} \right\}$
+
+  \item $T:\,\mathbb{R}^n\rightarrow\mathbb{R}^m$ matrix transformation, then $T(\overrightarrow{v})=A\overrightarrow{v}$, then ker$(T)=A\overrightarrow{v}=\bold{0}$
+
+  \item Let $T:\, V\rightarrow W$ is a linear transformation, then ker$(T)$ is a subspace of $V$
+
+  \item Range — Let $T:\,V\rightarrow W$ be a linear transformation. The set of all vectors in $W$ that are images under $T$ of vectors in $V$ are called the Range of $T$. range$(T)=\left\{ \overrightarrow{w}\in W\,\Big|\, T(\overrightarrow{v})=\overrightarrow{w}, \overrightarrow{v}\in W \right\}$
+
+  \item Let $T:\,\mathbb{R}^n\rightarrow\mathbb{R}^m$ be a linear transformation defined by $T(\overrightarrow{v})=A\overrightarrow{v}$, then the range$(T)=$ the column space of $A$
+
+  \item Rank and Nullity — Let $T:\,V\rightarrow W$ be a linear transformation. Then nullity$(T)=$ dim(ker$(T)$), rank$(T)=$ dim(range($T$)), and rank$(T)+$ nullity$(T)=$ dim$(V)$
+
+  \item rank$(T)+$ nullity$(T)=n$
+
+\end{itemize}
+
+\end{document}
+
