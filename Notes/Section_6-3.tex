@@ -1,0 +1,76 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Linear Algebra (MATH-194)
+% Professor: L. Knight
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article} 
+\usepackage{alphalph}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+\usepackage{everysel}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{cancel}
+\usepackage{siunitx}
+\geometry{top=1.0in,bottom=1.0in,left=1.0in,right=1.0in}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+
+}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,      
+urlcolor=blue,
+citecolor=blue,
+}
+
+\urlstyle{same}
+
+
+\title{Matrices for Linear Transformations}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Lynn Knight}
+
+% Mathematical Operations:
+
+% Sum: $$\sum_{n=a}^{b} f(x) $$
+% Integral: $$\int_{lower}^{upper} f(x) dx$$
+% Limit: $$\lim_{x\to\infty} f(x)$$
+
+\begin{document}
+
+\maketitle
+
+\begin{itemize}
+
+  \item Standard Matrix for linear transformations:
+
+    \begin{enumerate}
+
+      \item ex. $T:\,\mathbb{R}^2\rightarrow\mathbb{R}^3$. $T\left( \begin{bmatrix} x_1\\x_2\end{bmatrix} \right)=\begin{bmatrix} x_1+2x_2\\3x_1+4x_2\\5x_1+6x_2\end{bmatrix}$, then $T(\overrightarrow{x})=\begin{bmatrix} 1 & 2\\3&4\\5&6\end{bmatrix}\begin{bmatrix}x_1\\x_2\end{bmatrix}=A\overrightarrow{x}$, where $A=\begin{bmatrix}1&2\\3&4\\5&6\end{bmatrix}$
+
+      \item Standard Matrix for $T:\,\mathbb{R}^n\rightarrow\mathbb{R}^m$, where $T$ is a linear transformation and $B=\left\{ \overrightarrow{e}_1,\overrightarrow{e}_2,\dots,\overrightarrow{e}_n \right\}$ is a standard basis for $\mathbb{R}^n$, then $A=\left[ T(\overrightarrow{e}_1)\,\Big|\,T(\overrightarrow{e}_2)\,\Big|\,\dots\,\Big|\,T(\overrightarrow{e}_n) \right]$ is a standard matrix for $T$ such that $T(\overrightarrow{x})=A\overrightarrow{x} \,\,\,\forall\overrightarrow{x}\in\mathbb{R}^n$
+
+      \item Note: Every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ is a matrix transformation
+
+    \end{enumerate}
+    
+  \item Let $V$ and $W$ be vector spaces with bases $B$ and $B'$, where $B=\left\{ \overrightarrow{v}_1,\overrightarrow{v}_2,\dots,\overrightarrow{v}_n \right\}$. If $T:\,V\rightarrow W$ is a linear transformation such that:\newline $[T(\overrightarrow{v}_1)]_{B'}=\begin{bmatrix} a_{11}\\a_{21}\\\vdots\\a_{31}\end{bmatrix},[T(\overrightarrow{v}_2)]_{B'}=\begin{bmatrix} a_{12}\\a_{22}\\\vdots\\a_{32}\end{bmatrix},\dots,[T(\overrightarrow{v}_B)]_{B'}=\begin{bmatrix}a_{1n}\\a_{2n}\\\vdots\\a_{mn}\end{bmatrix}$. Then, the $m\times n$ matrix whose $n$ columns correspond to $[T(\overrightarrow{v}_i)]_{B'}$ is such that $[T(\overrightarrow{v})]_{B'}=A[\overrightarrow{v}]_B$
+
+\end{itemize}
+
+\end{document}
+
