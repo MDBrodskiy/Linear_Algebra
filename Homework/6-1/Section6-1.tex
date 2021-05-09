@@ -76,87 +76,187 @@ citecolor=blue,
       \underline{1, 6, 11, 13, 16, 19, 21, 23, 25, 29, 33, 36, 37, 39, 45, 48, 55, 56, 57, 58, 63, 65, 69}
     \end{center}
 
-  \item
+  \item 
+
+    \begin{enumerate}
+
+      \item $(3+(-4), 3-(-4))=(-1,7)$ 
+
+      \item $\left[\begin{array}{c c | c} 1 & 1 & 3\\ 1 & -1 & 19  \end{array}\right]\widetilde{ }\left[\begin{array}{c c | c} 1 & 1 & 3\\ 0 & -2 & 16\\  \end{array}\right]\widetilde{ }\left[\begin{array}{c c | c} 1 & 0 & 11\\ 0 & 1 & -8\\  \end{array}\right]\Rightarrow (11,-8)$
+
+    \end{enumerate}
     
     \setcounter{enumi}{5}
 
   \item
 
+    \begin{enumerate}
+
+      \item $(2(2)+1, 2-1)=(5,1)$
+
+      \item $\left[ \begin{array}{c c | c} 2 & 1 & -1\\ 1 & -1 & 2  \end{array} \right]\widetilde{ }\left[ \begin{array}{c c | c} 1 & 2 & -3\\ 1 & -1 & 2  \end{array} \right]\widetilde{ }\left[ \begin{array}{c c | c} 1 & 2 & -3\\ 0 & -3 & 5  \end{array} \right]\widetilde{ }\left[ \begin{array}{c c | c} 1 & 0 & \frac{1}{3}\\ 0 & 1 & -\frac{5}{3}  \end{array} \right]\Rightarrow\left( \frac{1}{3},-\frac{5}{3},c \right)$
+
+    \end{enumerate}
+
     \setcounter{enumi}{10}
 
-  \item
+  \item This is a linear transformation
+
+    \begin{enumerate}
+
+      \item $T(\overrightarrow{u})+T(\overrightarrow{v})=(u_1+u_2,u_1-u_2,u_3)+(v_1+v_2,v_1-v_2,v_3)=(u_1+v_1+u_2+v_2, u_1+v_1-u_2-v_2,u_3+v_3)=T(\overrightarrow{u}+\overrightarrow{v})$ \textcolor{green}{\checkmark}
+
+      \item$cT(\overrightarrow{u})=c(u_1+u_2,u_1-u_2,u_3)=(cu_1+cu_2,cu_1-cu_2,cu_3)=T(c\overrightarrow{u})$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{12}
 
-  \item
+  \item This is not a linear transformation
+
+    \begin{enumerate}
+
+      \item The second axiom fails: $cT(\overrightarrow{u})=(c\sqrt{u_1},cu_1u_2,c\sqrt{u_2})\neq (\sqrt{cu_1},c^2u_1u_2,\sqrt{cu_2})=T(c\overrightarrow{u})$ \textcolor{red}{\xmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{15}
 
-  \item
+  \item This is a linear transformation
+
+    \begin{enumerate}
+
+      \item $T(\bold{A})+T(\bold{B})=a+b+c+d+e+f+g+h=T(\bold{A}+\bold{B})$ \textcolor{green}{\checkmark}
+
+      \item $kT(\bold{A})=k(a+b+c+d)=ka+kb+kc+kd=T(k\bold{A})$
+
+    \end{enumerate}
 
     \setcounter{enumi}{18}
 
-  \item
+  \item This is a linear transformation
+
+    \begin{enumerate}
+
+      \item $T(\bold{A}) + T(\bold{B})=\begin{bmatrix} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0\end{bmatrix}\bold{A}+\begin{bmatrix} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0\end{bmatrix}\bold{B}=\begin{bmatrix} 0 & 0 & 1\\ 0 & 1 & 0\\ 1 & 0 & 0\end{bmatrix}(\bold{A}+\bold{B})=T(\bold{A}+\bold{B})$ \textcolor{green}{\checkmark}
+
+      \item $cT(\bold{A})=\begin{bmatrix}0&0&c\\0&c&0\\c&0&0\end{bmatrix}\bold{A}=T(c\bold{A})$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{20}
 
-  \item
+  \item This is a linear transformation
+
+    \begin{enumerate}
+
+      \item $T(a_0+a_1x+a_2x^2) + T(b_0+b_1x+b_2x^2)=(a_0+a_1+a_2)+(a_1+a_2)x+a_2x^2+(b_0+b_1+b_2)+(b_1+b_2)x+b_2x^2=(a_0+b_0+a_1+b_1+a_2+b_2)+(a_1+b_1+a_2+b_2)x+(a_2+b_2)x^2=T((a_0+b_0)+(a_1+b_1)x+(a_2+b_2)x^2)$ \textcolor{green}{\checkmark}
+
+      \item $cT(a_0+a_1x+a_2x^2)=c((a_0+a_1+a_2)+(a_1+a_2)x+a_2x^2)=(ca_0+ca_1+ca_2)+(ca_1+ca_2)x+ca_2x^2=T(ca_0+ca_1x+ca_2x^2)$ \textcolor{green}{\checkmark}
+
+    \end{enumerate}
 
     \setcounter{enumi}{22}
 
   \item
 
+    \begin{enumerate}
+
+      \item $T(1,4)=T(1,0)+4T(0,1)=(1,1)+4(-1,1)=(-3,5)$
+
+      \item $T(-2,1)=-2T(1,0)+T(0,1)=-2(1,1)+(-1,1)=(-3,-1)$
+
+    \end{enumerate}
+
     \setcounter{enumi}{24}
 
-  \item
+  \item $T(1,-3,0)=T(1,0,0)-3T(0,1,0)=(2,4,-1)-3(1,3,-2)=(-1,-5,5)$
 
     \setcounter{enumi}{28}
 
-  \item
+  \item $T(4,2,0)=4T(1,0,1)-2T(0,-1,2)=4(1,1,0)-2(-3,2,-1)=(10,0,2)$
 
     \setcounter{enumi}{32}
 
-  \item
+  \item $\bold{A}$ is $2\times2$, so $m=n=2$ ($T:\mathbb{R}^2\rightarrow\mathbb{R}^2$)
 
     \setcounter{enumi}{35}
 
-  \item
+  \item $\bold{A}$ is $4\times4$, so $m=n=4$ ($T:\mathbb{R}^4\rightarrow\mathbb{R}^4$)
 
-  \item
+  \item $\bold{A}$ is $2\times5$, so $n=5$, and $m=2$ ($T:\mathbb{R}^5\rightarrow\mathbb{R}^2$)
 
     \setcounter{enumi}{38}
 
   \item
 
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} 0 & -1\\ -1 &0  \end{bmatrix}(1,1)=(-1,-1)$
+
+      \item $\left[ \begin{array}{cc|c} 0 & -1 & 1\\ -1 & 0 & 1  \end{array} \right]\widetilde{ }\left[ \begin{array}{cc|c} -1 & 0 & 1\\ 0 & -1 & 1  \end{array} \right]\widetilde{ }\left[ \begin{array}{cc|c} 1 & 0 & -1\\ 0 & 1 & -1 \end{array} \right]\Rightarrow(-1,-1)$
+
+      \item The preimage of $(0,0)$ is $(0,0)$
+
+    \end{enumerate}
+
     \setcounter{enumi}{44}
 
   \item
 
+    \begin{enumerate}
+
+      \item $(4\cos(45)-4\sin(45), 4\sin(45)+4\cos(45))=(0,4\sqrt{2})$
+
+      \item $(4\cos(30)-4\sin(30),4\sin(30)+4\cos(30))=(2\sqrt{3}-2,2\sqrt{3}+2)$
+
+      \item $(5\cos(120),5\sin(120))=\left(-\frac{5}{2},\frac{5\sqrt{3}}{2}\right)$
+
+    \end{enumerate}
+
     \setcounter{enumi}{47}
 
-  \item
+  \item $\begin{bmatrix} a & -b\\ b & a \end{bmatrix}(12,5)=(13,0)\Rightarrow \left\{\begin{array}{c} 12a-5b=13\\12b+5a=0\end{array}\Rightarrow\left[ \begin{array}{cc|c} 12 & -5 & 13\\ 5 & 12 & 0  \end{array} \right]\widetilde{ }\left[ \begin{array}{cc|c} 2 & -29 & 13\\ 1 & \frac{12}{5} & 0  \end{array} \right]\widetilde{ }$\\$\left[ \begin{array}{cc|c} 1 & -\frac{29}{2} & \frac{13}{2}\\ 0 & \frac{169}{10} & -\frac{13}{2}  \end{array} \right]\widetilde{ }\left[ \begin{array}{cc|c} 1 & -\frac{29}{2} & \frac{13}{2}\\0 & 1 & -\frac{5}{13} \end{array} \right]\widetilde{ }\left[ \begin{array}{cc|c} 1 & 0 & \frac{12}{13}\\0 & 1 & -\frac{5}{13}  \end{array} \right]\Rightarrow a=\frac{12}{13},b=-\frac{5}{13}$
 
     \setcounter{enumi}{54}
 
-  \item
+  \item $2T(1)-6T(x)+T(x^2)=x^2-3x-5$
 
-  \item
+  \item $T\left( \begin{bmatrix} 1 & 0\\ 0 & 0\end{bmatrix} \right)+3T\left( \begin{bmatrix} 0 & 1\\ 0 & 0  \end{bmatrix} \right)-T\left( \begin{bmatrix} 0 & 0\\ 1 & 0\end{bmatrix} \right)+4T\left( \begin{bmatrix} 0 & 0\\ 0 & 1\end{bmatrix} \right)=\begin{bmatrix} 12 & -1\\ 7 & 4 \end{bmatrix}$
 
-  \item
+  \item The statement is true. The differential operator is a linear transformation, so this holds true.
 
-  \item
+  \item The statement is true. As with (57), the differential operator is a linear transformation, so it can be broken up as shown.
 
     \setcounter{enumi}{62}
 
-  \item
+  \item $D_x(f)=\sin(x)$, so the preimage is $\int\sin(x)\,dx\Rightarrow F(x)=-\cos(x)+c$
 
     \setcounter{enumi}{64}
 
   \item
 
+    \begin{enumerate}
+
+      \item $\int_0^1 -2+3x^2\,dx=\left( -2x+x^3 \right)\Big|_0^1=-1$ 
+
+      \item $\int_0^1 x^3-x^5\,dx=\left( \frac{x^4}{4}-\frac{x^6}{6} \right)\Big|_0^1=\frac{1}{12}$
+
+      \item $\int_0^1 -6+4x\,dx=\left( -6x+2x^2 \right)\Big|_0^1=-4$
+
+    \end{enumerate}
+
     \setcounter{enumi}{68}
 
   \item
+
+    \begin{enumerate}
+
+      \item $T(x,y)=xT(1,0)+yT(0,1)=(x,0)$
+
+      \item $T$ projects onto the $x$-axis
+
+    \end{enumerate}
 
 \end{enumerate}
 
