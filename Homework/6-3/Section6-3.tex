@@ -78,55 +78,99 @@ citecolor=blue,
 
     \setcounter{enumi}{2}
 
-  \item
+  \item $\left\{\begin{array}{c} x+y\\x-y\\z-x\end{array}\Rightarrow\begin{bmatrix} 1 & 1 & 0\\ 1 & -1 & 0\\ -1 & 0 & 1\end{bmatrix}$
 
     \setcounter{enumi}{4}
 
-  \item
+  \item $\left\{\begin{array}{c} 3x-2z\\2y-z\end{array}\Rightarrow\begin{bmatrix} 3 & 0 & -2\\ 0 & 2 & -1  \end{bmatrix}$
 
     \setcounter{enumi}{8}
 
-  \item
+  \item $\begin{bmatrix} 1 & -3\\ 2 & 1\\ 0 & 1\end{bmatrix}\begin{bmatrix} -2\\4\end{bmatrix}=\begin{bmatrix} -14\\0\\4\end{bmatrix}\Rightarrow(-14,0,4)$
 
     \setcounter{enumi}{14}
 
   \item
 
+    \begin{enumerate}
+
+      \item  $\frac{1}{2}\begin{bmatrix} \sqrt{2} & -\sqrt{2}\\ \sqrt{2} & \sqrt{2} \end{bmatrix}$
+
+      \item $\frac{1}{2}\begin{bmatrix} \sqrt{2} & -\sqrt{2}\\ \sqrt{2} & \sqrt{2} \end{bmatrix}\begin{bmatrix} 2\\2\end{bmatrix}=\begin{bmatrix} 0\\ 2\sqrt{2}\end{bmatrix}$
+
+      \item Draw out a graph
+
+    \end{enumerate}
+
     \setcounter{enumi}{20}
-
-  \item
-
-    \setcounter{enumi}{36}
-
-  \item
-
-    \setcounter{enumi}{38}
-
-  \item
-
-    \setcounter{enumi}{42}
-
-  \item
-
-    \setcounter{enumi}{44}
-
-  \item
-
-    \setcounter{enumi}{46}
-
-  \item
-
-    \setcounter{enumi}{48}
-
-  \item
-
-    \setcounter{enumi}{50}
 
   \item
 
     \begin{enumerate}
 
-      \item 
+      \item $\bold{w}\cdot\bold{w}=10\Rightarrow\frac{\bold{w}}{10}=\left( \frac{3}{10},\frac{1}{10} \right)\Rightarrow\begin{bmatrix} .9 & .3\\ .3 & .1\end{bmatrix}$
+
+      \item $\begin{bmatrix} .9 & .3\\ .3 & .1\end{bmatrix}\begin{bmatrix} 1\\4\end{bmatrix}=\begin{bmatrix} \frac{21}{10}\\ \frac{7}{10} \end{bmatrix}$
+
+      \item Draw out a graph
+
+    \end{enumerate}
+
+    \setcounter{enumi}{36}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} 1 & 1\\1 & 0\\ 0 &1  \end{bmatrix}\begin{bmatrix} 5\\4\end{bmatrix}=(9,5,4)$
+
+      \item $T(1,-1)=(0,1,-1)\text{ and }T(0,1)=(1,0,1)\Rightarrow \begin{bmatrix} 0 & 1\\1 & 0\\-1 & 1\end{bmatrix}\begin{bmatrix} 5\\9\end{bmatrix}=\begin{bmatrix} 9\\5\\4\end{bmatrix}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{38}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix}2 & 0 & 0\\ 1 & 1 & 0\\ 0 & 1 & 1\\ 1 & 0 & 1  \end{bmatrix}\begin{bmatrix} 1\\-5\\2\end{bmatrix}=\begin{bmatrix} 2\\-4\\-3\\3\end{bmatrix}$
+
+      \item $T(2,0,1)=(4,2,1,3)\text{ and }T(0,2,1)=(0,2,3,1)\text{ and }T(1,2,1)=(2,3,3,2)\Rightarrow\begin{bmatrix} 4 & 0 & 2\\2 & 2 & 3\\ 1 & 3 & 3\\ 3  &1 & 2\end{bmatrix}\Rightarrow \left[ \begin{array}{ccc|c} 2 & 0 & 1 & 1\\ 0 & 2 & 2 & -5\\ 1 & 1 & 1 & 2  \end{array} \right]\widetilde{ }\left[ \begin{array}{ccc|c} 2 & 0 & 1 & 1\\ 0 & 1 & 1 & -\frac{5}{2}\\ 1 & 0 & 0 & \frac{9}{2}  \end{array} \right]\widetilde{ }\left[ \begin{array}{ccc|c} 1 & 0 & 0 & \frac{9}{2}\\ 0 & 1 & 0 & -\frac{23}{2}\\ 0 & 0 & 1 & -8  \end{array} \right]\Rightarrow\begin{bmatrix} 4 & 0 &2\\ 2 & 2 &3\\ 1 & 3 & 3\\ 3&1 &2\end{bmatrix} \begin{bmatrix} \frac{9}{2}\\\frac{11}{2}\\-8\end{bmatrix}=\begin{bmatrix} 2\\-4\\-3\\3\end{bmatrix}$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{42}
+
+  \item $T(1)=x$, $T(x)=x^2$, $T(x^2)=x^3\Rightarrow\begin{bmatrix} 0 & 0 & 0\\ 1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}$
+
+    \setcounter{enumi}{44}
+
+  \item $T(1)=0$, $T(x)=1$, $T(e^x)=e^x$, and $T(xe^x)=e^x+xe^x\Rightarrow\begin{bmatrix} 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 1 & 1\\ 0 & 0 & 1 & 0\end{bmatrix}$
+
+    \setcounter{enumi}{46}
+
+  \item $\begin{bmatrix} 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 1 & 1\\ 0 & 0 & 1 & 0\end{bmatrix}\begin{bmatrix} 0\\ 4\\ 0\\ -3\end{bmatrix}=\begin{bmatrix} 4\\ 0\\-3\\-3\end{bmatrix}=4-3e^x-3xe^x$
+
+    \setcounter{enumi}{48}
+
+  \item
+
+    \begin{enumerate}
+
+      \item $T(1)=x$, $T(x)=\frac{1}{2}x^2$, $T(x^2)=\frac{1}{3}x^3$, and $T(x^3)=\frac{1}{4}x^4\Rightarrow\begin{bmatrix} 0 & 0 & 0 & 0\\ 1 & 0 & 0 & 0\\ 0 & \frac{1}{2} & 0 & 0\\ 0 & 0 & \frac{1}{3} & 0\\ 0 & 0 & 0 & \frac{1}{4}  \end{bmatrix}$
+
+      \item $\begin{bmatrix} 0 & 0 & 0 & 0\\ 1 & 0 & 0 & 0\\ 0 & \frac{1}{2} & 0 & 0\\ 0 & 0 & \frac{1}{3} & 0\\ 0 & 0 & 0 & \frac{1}{4}  \end{bmatrix}\begin{bmatrix} 8\\ -4\\0\\3\end{bmatrix}=\begin{bmatrix} 0\\8\\-2\\0\\\frac{3}{4}  \end{bmatrix}=8x-2x^2+\frac{3}{4}x^4$
+
+    \end{enumerate}
+
+    \setcounter{enumi}{50}
+
+  \item $T\left( \begin{bmatrix} 1 & 0 & 0\\ 0 & 0 & 0 \end{bmatrix} \right)=\begin{bmatrix} 1 & 0\\0 & 0\\ 0 &0\end{bmatrix}$, $T\left( \begin{bmatrix} 0 & 1 & 0\\ 0 & 0 & 0 \end{bmatrix} \right)=\begin{bmatrix} 0 & 0\\1 & 0\\ 0 &0\end{bmatrix}$, $T\left( \begin{bmatrix} 0 & 0 & 1\\ 0 & 0 & 0 \end{bmatrix} \right)=\begin{bmatrix} 0 & 0\\0 & 0\\ 1 &0\end{bmatrix}$, $T\left( \begin{bmatrix} 0 & 0 & 0\\ 1 & 0 & 0 \end{bmatrix} \right)=\begin{bmatrix} 0 & 1\\0 & 0\\ 0 &0\end{bmatrix}$, $T\left( \begin{bmatrix} 0 & 0 & 0\\ 0 & 1 & 0 \end{bmatrix} \right)=\begin{bmatrix} 0 & 0\\0 & 1\\ 0 &0\end{bmatrix}$ $T\left( \begin{bmatrix} 0 & 0 & 0\\ 0 & 0 & 1 \end{bmatrix} \right)=\begin{bmatrix} 0 & 0\\0 & 0\\ 0 &1\end{bmatrix}$
+
+    \begin{enumerate}
+
+      \item $\begin{bmatrix} 1 & 0 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 &1 & 0 & 0\\ 0 & 1 & 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 1 & 0\\ 0 & 0 & 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 0 & 0 & 1\end{bmatrix}$
 
     \end{enumerate}
 
